@@ -1,0 +1,31 @@
+{
+  "short_name": "W. Archer",
+  "name": "William Archer",
+  "icons": [
+    {
+      "src": "assets/brand/favicon-64x.png",
+      "sizes": "64x64",
+      "type": "image/webp"
+    },
+    {
+      "src": "assets/brand/favicon.png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "assets/brand/favicon-256x.png",
+      "sizes": "256x256",
+      "density": 2
+    },
+    {
+      "src": "assets/brand/favicon-512x.png",
+      "sizes": "512x512",
+      "density": 2
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#256DAD",
+  "display": "fullscreen",
+  "scope": "/",
+  "theme_color": "#256DAD",
+  "orientation": "landscape"
+}

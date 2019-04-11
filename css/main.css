@@ -1,0 +1,128 @@
+@import url('https://rsms.me/inter/inter.css');
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: 'Inter var', sans-serif;
+    }
+}
+
+/* Globals */
+:root {
+    --light-color: #E7ECF1;
+    --light-accent: #62B7EB;
+    --primary-color: #256DAD;
+    --dark-accent: #563775;
+    --dark-color: #222E47;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #e7eaf3;
+}
+
+/* Fonts */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Inter', Lato, Arial, Helvetica, sans-serif, Arial, sans-serif;
+    text-decoration: none !important;
+    margin: 0;
+}
+h1, .h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    letter-spacing: normal;
+    text-transform: uppercase;
+}
+.thin { font-weight: 500; }
+h2, .h2 {
+    font-size: 3.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.1em;
+}
+h3, .h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+h4, .h4 {
+    font-size: 2.25rem;
+    font-weight: 400;
+}
+h5, .h5 {
+    font-size: 1.875rem;
+}
+h6, .h6 {
+    font-size: 1.125rem;
+    font-weight: 800;
+}
+.list-head{ font-weight: 700; }
+.baseline { align-items: baseline; }
+/* Body Font */
+.lh-10 { line-height: 10px;}
+.lh-15 { line-height: 15px;}
+.lh-20 { line-height: 20px;}
+.lh-25 { line-height: 25px;}
+.lh-30 { line-height: 30px;}
+.lh-35 { line-height: 35px;}
+
+.lead {
+    font-family: 'Inter', Lato, Arial, Helvetica, sans-serif, Arial, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+p, .p {
+    font-family: 'Inter', Arial, Helvetica, Arial, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin: 0;
+}
+.small-font {
+    font-size: 1rem;
+}
+.xsmall-font {
+    font-size: 0.875rem;
+}
+.tiny-font {
+    font-size: 0.75rem;
+}
+
+/* Colors and Fills */
+.light { color: var(--light-color); } 
+.light-accent { color: var(--light-accent); }
+.primary { color: var(--primary-color); } 
+.secondary { color: var(--secondary-color); } 
+.dark-accent { color: var(--dark-accent); }
+.dark { color: var(--dark-color); }
+
+.bg-light { background-color: var(--light-color) !important; }
+.bg-light-accent { background-color: var(--light-accent); }
+.bg-primary { background-color: var(--primary-color); }
+.bg-secondary { background-color: var(--secondary-color); }
+.bg-dark-accent { background-color: var(--dark-accent); }
+.bg-dark { background-color: var(--dark-color) !important; }
+
+.f-light { fill: var(--light-color); }
+.f-light-accent { fill: var(--light-accent); }
+.f-primary { fill: var(--primary-color); }
+.f-secondary { fill: var(--secondary-color); }
+.f-dark-accent { fill:var(--dark-accent); }
+.f-dark { fill: var(--dark-color); }
+
+.text-muted{ color: #8c98a4 }

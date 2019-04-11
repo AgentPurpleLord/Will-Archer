@@ -1,0 +1,13 @@
+url: https://agentpurplelord.github.io/WilliamArcher.github.io/
+collections:
+  projects:
+    output: true
+    permalink: /:title/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      nav-color: "nbar-light"

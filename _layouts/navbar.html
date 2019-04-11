@@ -1,0 +1,41 @@
+---
+layout: footer
+---
+<body data-spy="scroll" data-target="#navbarResponsive">
+    <nav class="navbar navbar-expand-lg {{ page.nav-color }}">
+        {% if page.nav-color == 'nbar-light' %}
+        <a class="navbar-brand dark-accent animsition-link" href="{{ site.url }}" aria-label="Home">
+            WA
+        </a>
+        {% else %}
+        <a class="navbar-brand light-accent animsition-link" href="{{ site.url }}" aria-label="Home">
+            WA
+        </a>
+        {% endif %}
+
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-label="Hamburger Menu">
+            {% if page.nav-color == 'nbar-light' %}
+            <span class="navbar-toggler-icon-dark navbar-toggler-icon my-toggler"></span>
+            {% else %}
+            <span class="navbar-toggler-icon-light navbar-toggler-icon my-toggler"></span>
+            {% endif %}
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto float-right text-right pr-3">
+                {% for item in site.data.navigation %}
+                {% if page.url == item.url %}
+                <li class="nav-item">
+                    <a class="nav-link animsition-link" href="{{ item.url }}">{{ item.title }}</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link animsition-link" href="{{ site.url }}{{ item.url }}">{{ item.title }}</a>
+                </li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </nav>
+    {{ content }}
+</body>

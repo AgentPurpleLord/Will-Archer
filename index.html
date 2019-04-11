@@ -1,11 +1,49 @@
-<!DOCTYPE html>
+---
+layout: navbar
+nav-color: nbar-dark
+title: Home
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+---
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
+<section class="brief-head">
+    <div class="large-block">
+        <h1>Hello, I am Will.</h1>
+    </div>
+</section>
 
-</body>
-</html>
+<section class="gallery">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4 col-md-auto projects-filter">
+                <ul class="nav filter">
+                    <li class="nav-item active" data-filter="*">
+                        <a href="#" class="sub-link">All</a>
+                    </li>
+                    <li class="nav-item" data-filter=".Motion">
+                        <a href="#" class="sub-link">Motion</a>
+                    </li>
+                    <li class="nav-item" data-filter=".Graphic">
+                        <a href="#" class="sub-link">Graphic</a>
+                    </li>
+                    <li class="nav-item" data-filter=".Something">
+                        <a href="#" class="sub-link">Something</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row all-projects grid">
+                <div class="grid-sizer col-xd-4 col-sm-4 col-md-4"></div>
+                {% for item in site.projects %}
+                <div class="grid-item col-xs-4 col-sm-4 col-md-4 single-project {{ item.category }}">
+                    <a class="grid-item-content animsition-link" href="{{ item.url }}">
+                        <img data-aos="fade-up" src="{{ item.cover_image | relative_url }}" class="rounded img-responsive" alt="{{ item.project_name }}" />
+                        <h4 class="h6 light">{{ item.project_name }}</h4>
+                        <p class="primary">{{ item.category }}</p>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
