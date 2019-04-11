@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <tite>William Archer's Portfolio - {{ page.title }}</tite>
+    <meta content="{{ site.title }}" property="og:site_name" />
+    <link rel="canonical" href="{{ site.url }}" />
+
+    {% if page.categories %}
+    {% for category in page.categories limit:1 %}
+    <meta content="{{ category }}" property="article:section" />
+    {% endfor %}
+    {% endif %}
+
+    {% if page.tags %}
+    {% for tag in page.tags %}
+    <meta content="{{ tag }}" property="article:tag" />
+    {% endfor %}
+    {% endif %}
+
+    {% if page.title %}
+    <meta content="{{ page.title }}" property="og:title" />
+    <meta content="article" property="og:type" />
+    {% else %}
+    <meta content="{{ site.title }}" property="og:title" />
+    <meta content="website" property="og:type" />
+    {% endif %}
+
+    {% if page.description %}
+    <meta content="{{ page.description }}" property="og:description" />
+    {% else %}
+    <meta content="{{ site.description }}" property="og:description" />
+    {% endif %}
+
+    {% if page.url %}
+    <meta content="{{ site.url }}{{ page.url }}" property="og:url" />
+    {% endif %}
+
+    {% if page.date %}
+    <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+    <meta content="{{site.url}}/about/" property="article:author">
+    {% endif %}
+
+    {% if page.image %}
+    <meta content="{{site.url}}/assets/img/{{ page.image }}" property="og:image">
+    {% else %}
+    <meta content="{{site.url}}/assets/brand/wampa-ogp.png" property="og:image">
+    {% endif %}
+
+    <meta name="description" content="{{ page.description }}" />
+    <meta name="keywords" content="UPDATE THIS" />
+    <meta name="author" content="William Archer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#256DAD" />
+
+    <link rel="shortcut icon" href="{{ site.url }}/assets/brand/favicon.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ site.url }}/css/animsition.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+    <link rel="stylesheet" href="{{ site.url }}/css/style.css">
+</head>
+{{ content }}
+</html>

@@ -1,0 +1,64 @@
+---
+layout: head
+---
+<html>
+<body class="animsition">
+    {{ content }}
+    <footer></footer>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="{{ site.url }}/js/iso.js"></script>
+    <script src="{{ site.url }}/js/animsition.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".animsition").animsition({
+                inClass: 'fade-in',
+                outClass: 'fade-out',
+                inDuration: 1500,
+                outDuration: 800,
+                linkElement: '.animsition-link',
+                // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+                loading: false,
+                loadingParentElement: 'body', //animsition wrapper element
+                loadingClass: 'animsition-loading',
+                loadingInner: '', // e.g '<img src="loading.svg" />'
+                timeout: true,
+                timeoutCountdown: 500,
+                onLoadEvent: true,
+                browser: ['animation-duration', '-webkit-animation-duration'],
+                // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+                // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+                overlay: false,
+                overlayClass: 'animsition-overlay-slide',
+                overlayParentElement: 'body',
+                transition: function (url) { window.location.href = url; }
+            });
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        window.addEventListener('load', AOS.refresh)
+    </script>
+    <script>
+        function checkScroll() {
+            var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
+
+            if ($(window).scrollTop() > startY) {
+                $('.navbar').addClass("scrolled");
+            } else {
+                $('.navbar').removeClass("scrolled");
+            }
+        }
+
+        if ($('.navbar').length > 0) {
+            $(window).on("scroll load resize", function () {
+                checkScroll();
+            });
+        }
+    </script>
+    {% include lazyload.html %}
+</body>
+</html>
