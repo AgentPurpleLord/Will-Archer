@@ -4,11 +4,11 @@ layout: footer
 <body data-spy="scroll" data-target="#navbarResponsive">
     <nav class="navbar navbar-expand-lg {{ page.nav-color }}">
         {% if page.nav-color == 'nbar-light' %}
-        <a class="navbar-brand dark-accent animsition-link" href="{{ site.url }}" aria-label="Home">
+        <a class="navbar-brand dark-accent animsition-link h3" href="{{ site.url }}" aria-label="Home">
             WA
         </a>
         {% else %}
-        <a class="navbar-brand light-accent animsition-link" href="{{ site.url }}" aria-label="Home">
+        <a class="navbar-brand light-accent animsition-link h3" href="{{ site.url }}" aria-label="Home">
             WA
         </a>
         {% endif %}
@@ -21,7 +21,7 @@ layout: footer
             {% endif %}
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div class="navbar-collapse collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto float-right text-right pr-3">
                 {% for item in site.data.navigation %}
                 {% if page.url == item.url %}
