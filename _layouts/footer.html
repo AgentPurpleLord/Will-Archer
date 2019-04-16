@@ -4,7 +4,59 @@ layout: head
 <html>
 <body class="animsition">
     {{ content }}
-    <footer></footer>
+    <footer class="d-flex align-items-center" id="footerMain">
+        <div class="container footer-container">
+            <div class="row">
+                <div class="col">
+                    <form>
+                        <h3 class="light mb-4">Get in touch</h3>
+                        <div class="form-group" id="name-input">
+                            <label class="p light">Your Name<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="name" placeholder="Jack Wayley" required data-msg="Please enter your name." data-error-class="form-error" data-success-class="form-success" />
+                        </div>
+                        <div class="form-group" id="email-input">
+                            <label class="p light" for="contactInfoEmail">Your Email</label>
+                            <input type="email" name="email" class="form-control" id="email" placeholder="JohnDoe@gmail.com" />
+                        </div>
+                        <div class="form-group" id="phone-input">
+                            <label class="p light" for="contactInfoPhone">Your Phone Number</label>
+                            <input type="tel" name="phone" class="form-control" id="phone" placeholder="0420800800" />
+                        </div>
+                        <div class="form-group" id="info-input">
+                            <label class="form-label p light">Tell me briefly about your idea</label>
+                            <textarea class="form-control" name="project" id="projectoutline" rows="6" maxlength="400"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="col text-right">
+                    <a rel="noopener" href="https://www.instagram.com/_thepinkpanda_/" aria-label="Instagram" target="_blank"><span class="footer-icons"><i class="fab fa-instagram light"></i></span></a>
+                    <a rel="noopener" href="https://twitter.com/_thepinkpanda_" aria-label="Twitter" target="_blank"><span class="footer-icons"><i class="fab fa-twitter light"></i></span></a>
+                    <a rel="noopener" href="https://www.pinterest.com.au/PandaFromTheSea/" aria-label="Pinterest" target="_blank"><span class="footer-icons"><i class="fab fa-pinterest light"></i></span></a>
+                    <a rel="noopener" href="https://www.behance.net/warcherani3102" aria-label="Behance" target="_blank"><span class="footer-icons"><i class="fab fa-behance light"></i></span></a>
+                    <a rel="noopener" href="https://www.linkedin.com/in/warcheranimation/" aria-label="LinkedIn" target="_blank"><span class="footer-icons"><i class="fab fa-linkedin light"></i></span></a>
+                    <div class="row footer-nav">
+                        <ul class="navbar-nav ml-auto float-right text-right pr-3">
+                            {% for item in site.data.navigation %}
+                            {% if page.url == item.url %}
+                            <li class="nav-item">
+                                <a class="nav-link animsition-link" href="{{ item.url }}">{{ item.title }}</a>
+                            </li>
+                            {% else %}
+                            <li class="nav-item">
+                                <a class="nav-link animsition-link" href="{{ site.url }}{{ item.url }}">{{ item.title }}</a>
+                            </li>
+                            {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row justify-content-center">
+                <p class="light">COPYRIGHT PLACEHOLDER</p>
+            </div>
+        </div>
+    </footer>
     <script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
@@ -60,5 +112,7 @@ layout: head
         }
     </script>
     {% include lazyload.html %}
+
 </body>
+
 </html>
