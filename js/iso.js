@@ -6,7 +6,7 @@ jQuery(document).ready(function ($) {
         $(this).addClass("active");
 
         var selector = $(this).attr('data-filter');
-        $(".all-portfolios").isotope({
+        $(".all-projects").isotope({
             filter: selector,
             animationOptions: {
                 duration: 750,
