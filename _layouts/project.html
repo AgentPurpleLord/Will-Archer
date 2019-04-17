@@ -1,0 +1,62 @@
+---
+permalink: pretty
+layout: navbar
+nav-color: nbar-light
+title: {{ page.project_name }}
+description: {{ page.description }}
+---
+<div class="row project-section">
+    <div class="col-xl-7 col-lg-5 order-lg-1">
+        <p class="xsmall-font text-muted pt-4 pb-3"><i class="far fa-clock"></i>&nbsp{{ page.project_date }}&nbsp&nbsp<i class="fas fa-tags"></i>&nbsp{{ page.category }}</p>
+        {% if page.video %}
+        <div class="video">
+            <iframe class="resp-iframe" src="{{ page.video }}" frameborder="0" gesutre="media" allow="encrypted-media" allowfullscreen></iframe>
+        </div>
+        {% endif %}
+        <div class="portfolio-images pt-3">
+            {% for image in page.gallery %}
+            <img data-aos="fade-up" class="rounded mb-3 img-responsive" img-src="assets/function/blur.jpg" data-echo="{{ image | relative_url }}" alt="{{ image.name }}" />
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="col-xl-5 col-lg-5 order-lg-2">
+        <div class="info-section">
+            <h2 class="lead section-title">Client</h2>
+            <ul class="list-unstyled mb-0">
+                <li>
+                    <span class="text-muted">Name:</span>
+                    <span class="p dark small-font">{{ page.client }}</span>
+                </li>
+                <li>
+                    <span class="text-muted">Services:</span>
+                    <span class="p dark small-font">{{ page.services }}</span>
+                </li>
+                {% if page.client_site %}
+                <li>
+                    <span class="text-muted">Website:</span>
+                    <span class="p dark small-font">{{ page.client_site }}</span>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+        <div class="info-section">
+            <h2 class="lead section-title">Description</h2>
+            <p>
+                {{ page.description }}
+            </p>
+        </div>
+        <div class="info-section">
+            <h2 class="lead section-title">Tools & Tech</h2>
+            <p>
+                {{ page.tools }}
+            </p>
+        </div>
+        <div class="info-section">
+            <h2 class="lead section-title">Roles</h2>
+            <p>
+                {{ page.roles }}
+            </p>
+        </div>
+    </div>
+</div>
