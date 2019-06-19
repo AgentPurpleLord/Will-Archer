@@ -11,22 +11,23 @@ html {
 }
 
 /* Original Colors
+        --light-color: #E7ECF1;
+    --light-accent: #62B7EB;
+    --primary-color: #256DAD;
+    --dark-accent: #563775;
+    --dark-color: #222E47;
     :root {
-    --light-color: #EFF3F3;
-    --light-accent: #D6FF14;
-    --primary-color: #F46DD6;
-    --dark-accent: #2854EA;
-    --dark-color: #1C233B;
+
 }
 */
 
 /* Globals */
 :root {
-    --light-color: #E7ECF1;
-    --light-accent: #62B7EB;
-    --primary-color: #256DAD;
-    --dark-accent: #563775;
-    --dark-color: #222E47;
+    --light-color: #EFF3F3;
+    --light-accent: #D6FF14;
+    --primary-color: #F46DD6;
+    --dark-accent: #2854EA;
+    --dark-color: #1C233B;
 }
 
 html, body {
