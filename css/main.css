@@ -10,6 +10,16 @@ html {
     }
 }
 
+/* Original Colors
+    :root {
+    --light-color: #EFF3F3;
+    --light-accent: #D6FF14;
+    --primary-color: #F46DD6;
+    --dark-accent: #2854EA;
+    --dark-color: #1C233B;
+}
+*/
+
 /* Globals */
 :root {
     --light-color: #E7ECF1;
