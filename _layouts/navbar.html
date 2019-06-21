@@ -4,11 +4,11 @@ layout: footer
 <body data-spy="scroll" data-target="#navbarResponsive">
     <nav class="navbar navbar-expand-lg {{ page.nav-color }}">
         {% if page.nav-color == 'nbar-light' %}
-        <a class="navbar-brand dark-accent animsition-link h3" href="{{ site.url }}" aria-label="Home">
+        <a class="navbar-brand primary animsition-link h3" href="{{ site.url }}" aria-label="Home">
             WA
         </a>
         {% else %}
-        <a class="navbar-brand light-accent animsition-link h3" href="{{ site.url }}" aria-label="Home">
+        <a class="navbar-brand primary animsition-link h3" href="{{ site.url }}" aria-label="Home">
             WA
         </a>
         {% endif %}
@@ -27,6 +27,10 @@ layout: footer
                 {% if page.url == item.url %}
                 <li class="nav-item">
                     <a class="nav-link animsition-link" href="{{ item.url }}">{{ item.title }}</a>
+                </li>
+                {% elsif item.title == "Contact" %}
+                <li class="nav-item">
+                    <a class="nav-link" href="#footerMain">{{ item.title }}</a>
                 </li>
                 {% else %}
                 <li class="nav-item">

@@ -35,7 +35,7 @@ description: {{ page.description }}
                 {% if page.client_site %}
                 <li>
                     <span class="text-muted">Website:</span>
-                    <span class="p dark small-font">{{ page.client_site }}</span>
+                    <a href="{{ page.client_site }}" class="p dark small-font" target="_blank">{{ page.client_site }}</a>
                 </li>
                 {% endif %}
             </ul>

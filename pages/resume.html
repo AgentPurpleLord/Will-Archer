@@ -1,0 +1,99 @@
+---
+layout: navbar
+nav-color: nbar-light
+title: Home
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+splash: William Archer. Animator and Designer.
+about: I am an Animator, Designer and Illustrator with over 3 years experience in the industry. I love to draw all of the usual tropes; monsters, animals and spaceships. 
+
+experience:
+- job: Character Animator
+  company: Dirty Puppet
+  dates: November 2017 - July 2018
+  area: Melbourne, VIC
+  body: Dirty Puppet is an animation studio specializing in narrative driven animations and award winning TVCs. In my time working there I was a character animator on the popular children’s web series, The Grossery Gang. Tasked with working from an animatic to bring the colourful characters of cheap town to life!
+- job: Creative Director & Animator
+  company: Polynaut Studios
+  dates: October 2016 - October 2017
+  area: Melbourne, VIC
+  body: As the Creative Director, I had autonomy on all creative decisions during Polynaut Studios' life. Storyboards, logo designs, animatics, colour palettes, etc. I worked on projects from map ‘travel’ sequences to fully animated explainer videos for clients from all corners of Australia.
+- job: 3D Modeller, Rigger & Animator
+  company: Merkava Technologies
+  dates: July 2016 - August 2016
+  area: Melbourne, VIC
+  body: Merkava Technologies is a Virtual-Reality (VR) hard-ware company that was interested in tapping into the software development aspects of VR. During my internship, I was placed in-charge of creating 3D assets, rigging and animation for an Unreal Engine 4 (UE4) VR project (a sci-fi spaghetti western).
+
+education:
+- degree: Bachelor of Animation
+  institute: SAE Qantm Creative Media Institute
+  dates: 2014 - 2016
+  area: Melbourne, VIC
+- degree: Bachelor of Interactive Digital Media
+  institute: Royal Melbourne Institute of Technology
+  dates: 2012 - 2012
+  area: Melbourne, VIC
+
+skills:
+- Adobe Suite
+- Maya
+- 3D Modelling
+- Animation
+- 2D & 3D Rigging
+- Character Design
+- Concept Design
+- Logo Design
+- Layout Design
+- 2D Animation
+- Motion Graphics
+---
+<section class="splash">
+    <div class="row justify-content-end">
+        <div class="col-4 align-self-center text-center">
+            <h1 class="h3">{{ page.splash }}</h1>
+        </div>
+        <div class="col-6 text-center">
+            <img src="{{site.url}}/assets/brand/williamPerson.svg" alt="William Archer standing around" width="500" height="500" />
+        </div>
+    </div>
+
+</section>
+
+<section class="about">
+    <div class="row justify-content-center">
+        <div class="col-6 text-center">
+            <img src="{{site.url}}/assets/brand/artfulIcons.svg" alt="A series of art-related tools" width="500" height="500" />
+        </div>
+        <div class="col-6 align-self-center">
+            <h2 class=" h3 light normal-text">{{ page.about }}</h2>
+        </div>
+    </div>
+</section>
+
+<section class="experience">
+    <h3>Experience</h3>
+    {% for item in page.experience %}
+    <p class="lead">{{ item.job }}<span class="muted"> at {{ item.company }}</span></p>
+    <p>{{ item.dates }} - {{ item.area }}</p>
+    <p>{{ item.body }}</p>
+    {% endfor %}
+</section>
+
+<section class="education">
+    <h3>Experience</h3>
+    {% for item in page.education %}
+    <p class="lead">{{ item.degree }}<span class="muted"> at {{ item.institute }}</span></p>
+    <p>{{ item.dates }} - {{ item.area }}</p>
+    {% endfor %}
+</section>
+
+<section class="skills">
+    <h3>Skills</h3>
+    <ul>
+        {% for item in page.skills %}
+        <li>
+            <p>{{ item }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</section>

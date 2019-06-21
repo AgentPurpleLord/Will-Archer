@@ -2,7 +2,7 @@ url: https://agentpurplelord.github.io/WilliamArcher.github.io/
 collections:
   projects:
     output: true
-    permalink: WilliamArcher.github.io/:title/
+    permalink: :title/
 
 defaults:
   -

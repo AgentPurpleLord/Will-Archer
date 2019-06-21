@@ -2,6 +2,7 @@
 
 html {
     font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
 }
 
 @supports (font-variation-settings: normal) {
@@ -28,6 +29,7 @@ html {
     --primary-color: #F46DD6;
     --dark-accent: #2854EA;
     --dark-color: #202880;
+    --black: #282828;
 }
 
 html, body {
@@ -92,6 +94,7 @@ h6, .h6 {
 .lh-25 { line-height: 25px;}
 .lh-30 { line-height: 30px;}
 .lh-35 { line-height: 35px;}
+.normal-text { text-transform: none;}
 
 .lead {
     font-family: 'Inter', Lato, Arial, Helvetica, sans-serif, Arial, sans-serif;
@@ -199,7 +202,7 @@ p, .p {
     color: var(--primary-color);
 }
 .category-item a {
-    color: var(--dark-color);
+    color: var(--light-color);
     background-image: linear-gradient(var(--primary-color), var(--primary-color));
     background-position: 100% 100%;
     background-repeat: no-repeat;
@@ -226,17 +229,22 @@ footer i[class*="fa-"]:hover, focus {
 
 /* Content Sections */
 .brief-head {
-    color: var(--dark-color);
+    background: var(--black);
     padding: 10% 15%;
     text-align: center;
 }
+
+.gallery {
+    background: var(--black);
+}
+
 .gallery-container {
     width: 95%;
     padding: 0 10%;
     padding-bottom: 200px;
 }
 #footerMain {
-    background-color: var(--dark-color);
+    background-color: var(--dark-accent);
 }
 .footer-container {
     padding: 5% 0;
@@ -275,6 +283,68 @@ footer i[class*="fa-"]:hover, focus {
     height: 100%;
     border: 0;
 }
+.splash {
+    background: var(--light-color);
+    padding: 20px 20px 20px 0px;
+    border-bottom-left-radius: 66% 40%;
+    border-bottom-right-radius: 66% 40%;
+    border-bottom: 1px solid rgba(27,31,59,0.08);
+    box-shadow: 0 1px 10px -10px rgba(151, 164, 175, 0.1);
+    z-index: 2;
+    position: relative;
+}
+.about:before {
+    position: absolute;
+    content: "";
+    background: var(--dark-accent);
+    width: 100%;
+    bottom: 280px;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+}
+.about {
+    background-color: var(--dark-accent);
+    padding: 100px 50px;
+}
+
+/* Forms */
+.container {
+    top: 50%;
+    left: 50%;
+    text-align: left;
+}
+
+button {
+    outline: none;
+    height: 40px;
+    text-align: center;
+    width: 130px;
+    border-radius: 40px;
+    background: rgba(0,0,0,0);
+    border: 3px solid var(--light-color);
+    color: var(--light-color);
+    letter-spacing: 1px;
+    text-shadow: 0;
+    font-size: 12px;
+    font-weight: bold;
+    transition: all 350ms ease;
+}
+
+button:hover {
+    transition: all 350ms ease;
+    color: var(--light-accent);
+    background: var(--primary-color);
+    border: 0px solid var(--light-accent);
+}
+
+button:active {
+    letter-spacing: 2px;
+}
+
+button:after {
+    content: "SUBMIT";
+}
 
 /* Hover Effects */
 .tint {
@@ -292,7 +362,7 @@ footer i[class*="fa-"]:hover, focus {
     right: 0;
     opacity: 0;
     background: var(--primary-color);
-    mix-blend-mode: color-burn;
+    mix-blend-mode: overlay;
     transition: all .3s ease;
 }
 

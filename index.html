@@ -3,11 +3,12 @@ layout: navbar
 nav-color: nbar-light
 title: Home
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+hero: I fart a lot.
 ---
 
 <section class="brief-head">
     <div class="large-block">
-        <h1>Hello, I am Will. I make lots of things move with my imagination.</h1>
+        <h1 class="light">{{ page.hero }}</h1>
     </div>
 </section>
 
@@ -40,8 +41,8 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiu
                         <figure class="tint">
                             <img data-aos="fade-up" src="{{ item.cover_image | relative_url }}" class="rounded img-responsive" alt="{{ item.project_name }}" />
                         </figure>
-                        
-                        <h4 class="h6 dark mt-2">{{ item.project_name }}</h4>
+
+                        <h4 class="h6 light mt-2">{{ item.project_name }}</h4>
                         <p class="primary">{{ item.category }}</p>
                     </a>
                 </div>
