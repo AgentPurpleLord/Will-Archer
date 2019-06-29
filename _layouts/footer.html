@@ -7,25 +7,33 @@ layout: head
     <footer class="d-flex align-items-center" id="footerMain">
         <div class="container footer-container">
             <div class="row">
-                <div class="col">
+                <div class="col" id="contactSection">
                     <form name="ContactForm" onsubmit="return validateForm()">
                         <h3 class="light mb-4">Get in touch</h3>
-                        <div class="form-group" id="name-input">
-                            <label class="p light">Your Name<span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" name="name" placeholder="Billy Bob" required data-msg="Please enter your name." data-error-class="form-error" data-success-class="form-success" />
-                        </div>
-                        <div class="form-group" id="email-input">
-                            <label class="p light" for="contactInfoEmail">Your Email<span class="text-danger">*</span></label>
-                            <input type="email" name="email" class="form-control" id="email" placeholder="JohnDoe@gmail.com" required data-msg="Please enter your email." data-error-class="form-error" data-success-class="form-success"  />
-                        </div>
-                        <div class="form-group" id="phone-input">
-                            <label class="p light" for="contactInfoPhone">Your Phone Number</label>
-                            <input type="tel" name="phone" class="form-control" id="phone" placeholder="0420800800" />
-                        </div>
-                        <div class="form-group" id="info-input">
-                            <label class="form-label p light">Tell me briefly about your idea</label>
-                            <textarea class="form-control" name="project" id="projectoutline" rows="6" maxlength="400"></textarea>
-                        </div>
+                        <span class="input">
+                            <input type="text" class="input__field" id="input-1" name="name" required data-msg="Please enter your name." data-error-class="form-error" data-success-class="form-success" />
+                            <label for="input-1" class="input__label">
+                                <span class="input__label-content">Your Name<span class="text-danger">*</span></span>
+                            </label>
+                        </span>
+                        <span class="input">
+                            <input type="email" name="email" class="input__field" id="input-2" required data-msg="Please enter your email." data-error-class="form-error" data-success-class="form-success" />
+                            <label for="input-2" class="input__label">
+                                <span class="input__label-content">Your Email<span class="text-danger">*</span></span>
+                            </label>
+                        </span>
+                        <span class="input">
+                            <input type="tel" name="phone" class="input__field" id="input-3" />
+                            <label for="input-3" class="input__label">
+                                <span class="input__label-content">Phone Number</span>
+                            </label>
+                        </span>
+                        <span class="input message">
+                            <textarea style="overflow:hidden" class="input__field" name="project" id="input-5"></textarea>
+                            <label for="input-5" class="input__label">
+                                <span class="input__label-content">Message</span>
+                            </label>
+                        </span>
                         <div class="container">
                             <button id="submit"></button>
                         </div>
@@ -66,6 +74,7 @@ layout: head
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
     <script src="{{ site.url }}/js/iso.js"></script>
     <script src="{{ site.url }}/js/animsition.min.js"></script>
+    <script src="{{ site.url }}/js/contact.js"></script>
     <script>
             $(document).ready(function () {
                 $(".animsition").animsition({

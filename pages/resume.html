@@ -5,47 +5,43 @@ title: Home
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 splash: William Archer. Animator and Designer.
-about: I am an Animator, Designer and Illustrator with over 3 years experience in the industry. I love to draw all of the usual tropes; monsters, animals and spaceships. 
+about: I am an Animator, Designer and Illustrator with over 3 years experience in the industry. I love to draw all of the usual tropes; monsters, animals and spaceships.
 
-experience:
-- job: Character Animator
-  company: Dirty Puppet
-  dates: November 2017 - July 2018
-  area: Melbourne, VIC
+timeline:
+- title: Character Animator
+  place: Dirty Puppet
+  date: 2018
   body: Dirty Puppet is an animation studio specializing in narrative driven animations and award winning TVCs. In my time working there I was a character animator on the popular children’s web series, The Grossery Gang. Tasked with working from an animatic to bring the colourful characters of cheap town to life!
-- job: Creative Director & Animator
-  company: Polynaut Studios
-  dates: October 2016 - October 2017
-  area: Melbourne, VIC
+- title: Creative Director & Animator
+  place: Polynaut Studios
+  date: 2017
   body: As the Creative Director, I had autonomy on all creative decisions during Polynaut Studios' life. Storyboards, logo designs, animatics, colour palettes, etc. I worked on projects from map ‘travel’ sequences to fully animated explainer videos for clients from all corners of Australia.
-- job: 3D Modeller, Rigger & Animator
-  company: Merkava Technologies
-  dates: July 2016 - August 2016
-  area: Melbourne, VIC
+- title: 3D Modeller, Rigger & Animator
+  place: Merkava Technologies
+  date: 2016
   body: Merkava Technologies is a Virtual-Reality (VR) hard-ware company that was interested in tapping into the software development aspects of VR. During my internship, I was placed in-charge of creating 3D assets, rigging and animation for an Unreal Engine 4 (UE4) VR project (a sci-fi spaghetti western).
-
-education:
-- degree: Bachelor of Animation
-  institute: SAE Qantm Creative Media Institute
-  dates: 2014 - 2016
-  area: Melbourne, VIC
-- degree: Bachelor of Interactive Digital Media
-  institute: Royal Melbourne Institute of Technology
-  dates: 2012 - 2012
-  area: Melbourne, VIC
+- title: Bachelor of Animation
+  place: SAE Qantm Creative Media Institute
+  date: 2014
+- title: Bachelor of Interactive Digital Media
+  place: Royal Melbourne Institute of Technology
+  date: 2012
 
 skills:
-- Adobe Suite
-- Maya
-- 3D Modelling
-- Animation
-- 2D & 3D Rigging
-- Character Design
-- Concept Design
-- Logo Design
-- Layout Design
-- 2D Animation
-- Motion Graphics
+- skill: Adobe Suite
+  svg: /assets/brand/A.svg
+  alt: A picture of the letter A.
+- skill: Maya
+  svg: /assets/brand/M.svg
+  alt: A picture of the letter M.
+- skill: Design
+  svg: /assets/brand/designIcon.svg
+  alt: A picture of an old man.
+- skill: Animation
+- skill: Technical Art
+  svg: /assets/brand/techIcon.svg
+  alt: A picture of a protractor.
+
 ---
 <section class="splash">
     <div class="row justify-content-end">
@@ -70,30 +66,53 @@ skills:
     </div>
 </section>
 
-<section class="experience">
-    <h3>Experience</h3>
-    {% for item in page.experience %}
-    <p class="lead">{{ item.job }}<span class="muted"> at {{ item.company }}</span></p>
-    <p>{{ item.dates }} - {{ item.area }}</p>
-    <p>{{ item.body }}</p>
-    {% endfor %}
-</section>
+<section id="timeline">
+    <h3 class="light mt-4">My Past</h3>
+    {% assign sorted = (page.timeline | sort: 'date') | reverse %}
 
-<section class="education">
-    <h3>Experience</h3>
-    {% for item in page.education %}
-    <p class="lead">{{ item.degree }}<span class="muted"> at {{ item.institute }}</span></p>
-    <p>{{ item.dates }} - {{ item.area }}</p>
-    {% endfor %}
-</section>
-
-<section class="skills">
-    <h3>Skills</h3>
-    <ul>
-        {% for item in page.skills %}
-        <li>
-            <p>{{ item }}</p>
+    <ul class="timeline">
+        {% for item in sorted %}
+        <li class="event" data-date="{{ item.date }}">
+            <p class="mb-2">
+                <span class="h5">{{ item.title }}</span>
+                <span class="small-font thin"> at {{item.place }}</span>
+            </p>
+            <p class="small-font">{{ item.body }}</p>
         </li>
         {% endfor %}
     </ul>
+</section>
+
+<section class="skills">
+    <h3 class="text-center p-5 black">Skills</h3>
+    <div class="skillsContainer">
+        <div class="row justify-content-center pb-5">
+            {% for item in page.skills %}
+            {% if item.skill == 'Animation' %}
+            <div class="col-lg-2 align-self-center">
+                <div class="card hover-translate-y-n10 hover-shadow-lg">
+                    <svg viewBox="0 0 160 160" width="200" height="200">
+                        <circle cx="80" cy="80" r="50" fill="#2854EA" />
+                        <g transform=" matrix(0.866, -0.5, 0.25, 0.433, 80, 80)">
+                            <path d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z" fill="#F46DD6">
+                                <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="1s" repeatCount="indefinite" />
+                            </path>
+                        </g>
+                        <path d="M 50,0 A 50,50 0 0,0 -50,0Z" transform="matrix(0.866, -0.5, 0.5, 0.866, 80, 80)" fill="#2854EA" />
+                    </svg>
+                    <h4>{{ item.skill }} </h4>
+                </div>
+            </div>
+            {% else %}
+            <div class="col-lg-2 align-self-center">
+                <div class="card hover-translate-y-n10 hover-shadow-lg">
+                    <img class="skillIcon" src="{{ item.svg }}" alt="{{ item.alt }}" width="200" height="200" />
+                    <h4>{{ item.skill }}</h4>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    
 </section>
