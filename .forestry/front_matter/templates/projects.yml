@@ -2,33 +2,61 @@
 label: Projects
 hide_body: true
 fields:
-- type: text
-  name: layout
-  label: layout
-- type: text
-  name: category
-  label: category
+- name: category
+  type: select
+  default: motion
+  config:
+    required: true
+    options:
+    - motion
+    - graphic
+    - illustration
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
+  description: Select the category this project falls under.
 - type: file
   name: cover_image
-  label: cover_image
+  label: Cover Image
+  description: This image appears on the home page, not in the gallery. Make it quite
+    small to load the site quick.
+  config:
+    maxSize: '2'
 - type: text
   name: project_name
-  label: project_name
+  label: Project Name
+  description: The name of the project.
+  config:
+    required: true
 - type: textarea
   name: description
-  label: description
+  label: Description
+  description: A short description of the project. This appears inside the projects
+    page.
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
 - type: text
   name: project_date
-  label: project_date
+  label: Project Date
+  description: When was the project finished?
 - type: text
   name: client
-  label: client
+  label: Client
+  description: The name or company you did the work for.
+  config:
+    required: true
+- type: text
+  name: client_site
+  label: Client Site
+  description: This will hyperlink the clients name to their site.
 - type: text
   name: services
   label: services
-- type: text
-  name: client_site
-  label: client_site
 - type: text
   name: tools
   label: tools
