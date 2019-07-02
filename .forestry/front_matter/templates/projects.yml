@@ -1,0 +1,43 @@
+---
+label: Projects
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: category
+  label: category
+- type: file
+  name: cover_image
+  label: cover_image
+- type: text
+  name: project_name
+  label: project_name
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: project_date
+  label: project_date
+- type: text
+  name: client
+  label: client
+- type: text
+  name: services
+  label: services
+- type: text
+  name: client_site
+  label: client_site
+- type: text
+  name: tools
+  label: tools
+- type: text
+  name: roles
+  label: roles
+- type: text
+  name: video
+  label: video
+- type: image_gallery
+  name: gallery
+  label: gallery
