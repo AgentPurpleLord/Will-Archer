@@ -19,7 +19,8 @@ fields:
   description: Sets the color of the navigation bar.
 - type: text
   name: title
-  label: title
+  label: Title
+  description: The pages title for SEO / Browser Tab
 - type: textarea
   name: description
   label: description
