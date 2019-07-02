@@ -1,0 +1,51 @@
+---
+label: Resume
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: nav-color
+  label: nav-color
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: splash
+  label: splash
+- type: textarea
+  name: about
+  label: about
+- type: field_group_list
+  name: timeline
+  label: timeline
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: place
+    label: place
+  - type: number
+    name: date
+    label: date
+  - type: textarea
+    name: body
+    label: body
+- type: field_group_list
+  name: skills
+  label: skills
+  fields:
+  - type: text
+    name: skill
+    label: skill
+  - type: file
+    name: svg
+    label: svg
+  - type: text
+    name: alt
+    label: alt
