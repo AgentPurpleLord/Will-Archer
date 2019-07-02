@@ -2,18 +2,31 @@
 label: Home Page
 hide_body: false
 fields:
-- type: text
-  name: layout
-  label: layout
-- type: text
-  name: nav-color
-  label: nav-color
+- name: nav-color
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - nbar-light
+    - nbar-dark
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Navigation Color
+  description: Sets the color of the navigation bar.
 - type: text
   name: title
-  label: title
+  label: Title
+  description: The pages title for SEO / Browser Tab
 - type: textarea
   name: description
-  label: description
+  label: Description
+  description: The description of the page for SEO purposes. This will appear in things
+    like hyperlinks on Discord.
 - type: text
   name: hero
-  label: hero
+  label: Hero
+  description: This is the splash text on the main page.
