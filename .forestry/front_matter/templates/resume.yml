@@ -6,7 +6,7 @@ fields:
   type: select
   default: []
   config:
-    required: false
+    required: true
     options:
     - nbar-light
     - nbar-dark
@@ -21,41 +21,84 @@ fields:
   name: title
   label: Title
   description: The pages title for SEO / Browser Tab
+  config:
+    required: true
 - type: textarea
   name: description
-  label: description
+  label: Description
+  description: The description of the page for SEO purposes. This will appear in things
+    like hyperlinks on Discord.
+  config:
+    wysiwyg: false
+    schema:
+      format: html-blocks
+    required: true
 - type: text
   name: splash
-  label: splash
+  label: Splash
+  description: The text next to the little Will icon. It introduces your about page.
 - type: textarea
   name: about
-  label: about
+  label: About
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
+    required: false
+  description: Your about section that is in the blue portion with the icons next
+    to it. Try to keep it short!
 - type: field_group_list
   name: timeline
-  label: timeline
+  label: Timeline Entries
   fields:
   - type: text
     name: title
-    label: title
+    label: Title
+    description: The title of the timeline entry (e.g. the degree or position)
   - type: text
     name: place
-    label: place
+    label: Place
+    description: The institution or companies name.
   - type: number
     name: date
-    label: date
+    label: Date
+    description: The date that the event occurred (e.g. 2019)
+    config:
+      required: false
   - type: textarea
     name: body
-    label: body
+    label: Body
+    config:
+      wysiwyg: true
+      schema:
+        format: html-blocks
+    description: The information about the timeline entry, keep these brief to format
+      correctly.
+  description: 'You can enter a new entry on your timeline or edit an old one. They
+    will automatically sort by date. It is best to put in the FINISH date if you can. '
+  config:
+    labelField: title
 - type: field_group_list
   name: skills
-  label: skills
+  label: Skills
   fields:
   - type: text
     name: skill
-    label: skill
+    label: Skill
+    description: The name of the skill.
   - type: file
     name: svg
-    label: svg
+    label: SVG / Icon
+    description: This is embedded in an <img>. This need to be a path for the SVG
+      or image (e.g. assets/brand/blah.icon). If it's an image, it should be 200px
+      x 200px.
   - type: text
     name: alt
-    label: alt
+    label: Alternative Text
+    description: A description of the image.
+    config:
+      required: true
+  description: Your skills section down the bottom. It's best to keep these simple
+    overarching categories. You get 3 per row before it goes to a new row.
+  config:
+    labelField: skill
