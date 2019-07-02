@@ -1,0 +1,19 @@
+---
+label: Home Page
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: nav-color
+  label: nav-color
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: hero
+  label: hero
