@@ -2,12 +2,21 @@
 label: Resume
 hide_body: false
 fields:
-- type: text
-  name: layout
-  label: layout
-- type: text
-  name: nav-color
-  label: nav-color
+- name: nav-color
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - nbar-light
+    - nbar-dark
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Navigation Color
+  description: Sets the color of the navigation bar.
 - type: text
   name: title
   label: title
