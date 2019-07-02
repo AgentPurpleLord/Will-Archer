@@ -56,16 +56,22 @@ fields:
   description: This will hyperlink the clients name to their site.
 - type: text
   name: services
-  label: services
+  label: Services
+  description: The services you provided, should only be 2 - 4 words.
 - type: text
   name: tools
-  label: tools
+  label: Tools
+  description: The tools you used, can split it with commas.
 - type: text
   name: roles
-  label: roles
+  label: Roles
+  description: What roles you performed in.
 - type: text
   name: video
-  label: video
+  label: Video
+  description: The link of the youtube video (E.g. https://www.youtube.com/watch?v=D9kMcloM-TM)
 - type: image_gallery
   name: gallery
-  label: gallery
+  label: Gallery
+  description: You can upload photos through this to appear in the gallery and order
+    them in here. Keep them optimized!
