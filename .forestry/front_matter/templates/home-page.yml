@@ -30,3 +30,5 @@ fields:
   name: hero
   label: Hero
   description: This is the splash text on the main page.
+pages:
+- index.html
