@@ -1,4 +1,6 @@
 url: https://willarchercreative.com
+plugins:
+  - jekyll-sitemap
 collections:
   projects:
     output: true
