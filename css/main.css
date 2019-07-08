@@ -117,7 +117,7 @@ p, .p {
 }
 .nav-link {
     font-family: 'Inter', Arial, Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 24px; 
     font-weight: 700;
     text-decoration: none;
 }
@@ -226,7 +226,7 @@ p, .p {
 
 /* Icons */
 footer .fab {
-    font-size: 30px;
+    font-size: 38px;
     padding: 2%;
 }
 footer i[class*="fa-"]:hover, focus {
@@ -313,6 +313,7 @@ footer i[class*="fa-"]:hover, focus {
 .about {
     background-color: var(--dark-accent);
     padding: 100px 50px;
+    height: auto;
 }
 #timeline {
     text-align: center;
@@ -408,7 +409,7 @@ footer i[class*="fa-"]:hover, focus {
     left: 50%;
     text-align: left;
 }
-footer button {
+.button {
     outline: none;
     height: 40px;
     text-align: center;
@@ -423,17 +424,21 @@ footer button {
     font-weight: bold;
     transition: all 350ms ease;
 }
-footer button:hover {
+.button:hover {
     transition: all 350ms ease;
     color: var(--light-accent);
     background: var(--primary-color);
     border: 0px solid var(--light-accent);
 }
-footer button:active {
+.button:active {
     letter-spacing: 2px;
 }
-footer button:after {
+
+#footerButton:after {
     content: "SUBMIT";
+}
+#heroButton:after {
+    content: "HIRE ME";
 }
 .input {
     margin-bottom: 25px;
