@@ -39,6 +39,10 @@ img {
 
 a {
     text-decoration: none !important;
+    transition: 350ms ease all;
+}
+a:hover {
+    color: var(--primary-color);
 }
 
 hr {

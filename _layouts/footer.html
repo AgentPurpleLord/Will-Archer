@@ -8,8 +8,9 @@ layout: head
         <div class="container footer-container">
             <div class="row">
                 <div class="col-lg-6 col-md-6" id="contactSection">
-                    <form name="ContactForm" onsubmit="return validateForm()">
-                        <h3 class="light mb-4">Get in touch</h3>
+                    <form name="ContactForm" onsubmit="return validateForm()" action="https://formspree.io/w.archeranimation@gmail.com" method="POST">
+                        <h3 class="light">Get in touch</h3>
+                        <p class="small-font light-accent mb-4">w.archeranimation@gmail.com</p>
                         <div class="input">
                             <input type="text" class="input__field" id="input-1" name="name" required data-msg="Please enter your name." data-error-class="form-error" data-success-class="form-success" />
                             <label for="input-1" class="input__label">Name<span class="text-danger">*</span></label>
@@ -27,7 +28,7 @@ layout: head
                             <label for="input-5" class="input__label">Message</label>
                         </div>
                         <div class="container" id="submitButton">
-                            <button class="button" id="footerButton"></button>
+                            <button class="button" id="footerButton" type="submit" value="Send"></button>
                         </div>
                     </form>
                 </div>
