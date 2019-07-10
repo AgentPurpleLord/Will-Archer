@@ -4,12 +4,12 @@ layout: head
 <html>
 <body class="animsition">
     {{ content }}
-    <footer class="d-flex align-items-center" id="footerMain">
-        <div class="container footer-container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6" id="contactSection">
+    <footer class="footer" id="footer">
+        <div class="container--lg">
+            <div class="flex-grid">
+                <div class="flex-grid__col footer__form">
                     <form name="ContactForm" onsubmit="return validateForm()" action="https://formspree.io/w.archeranimation@gmail.com" method="POST">
-                        <h3 class="light">Get in touch</h3>
+                        <h3>Get in touch</h3>
                         <p class="small-font light-accent mb-4">w.archeranimation@gmail.com</p>
                         <div class="input">
                             <input type="text" class="input__field" id="input-1" name="name" required data-msg="Please enter your name." data-error-class="form-error" data-success-class="form-success" />
@@ -27,28 +27,28 @@ layout: head
                             <textarea style="overflow:hidden" class="input__textarea" name="project" id="input-5"></textarea>
                             <label for="input-5" class="input__label">Message</label>
                         </div>
-                        <div class="container" id="submitButton">
-                            <button class="button" id="footerButton" type="submit" value="Send"></button>
-                        </div>
+                        <button class="btn btn--success" type="submit" value="Send">
+                            <span class="btn__text">SUBMIT</span>
+                        </button>
                     </form>
                 </div>
-                <div class="col-lg-6 col-md-6 text-right" id="socials">
-                    <a rel="noopener" href="https://www.instagram.com/_thepinkpanda_/" aria-label="Instagram" target="_blank"><span class="footer-icons"><i class="fab fa-instagram light"></i></span></a>
-                    <a rel="noopener" href="https://twitter.com/_thepinkpanda_" aria-label="Twitter" target="_blank"><span class="footer-icons"><i class="fab fa-twitter light"></i></span></a>
-                    <a rel="noopener" href="https://www.pinterest.com.au/PandaFromTheSea/" aria-label="Pinterest" target="_blank"><span class="footer-icons"><i class="fab fa-pinterest light"></i></span></a>
-                    <a rel="noopener" href="https://www.behance.net/warcherani3102" aria-label="Behance" target="_blank"><span class="footer-icons"><i class="fab fa-behance light"></i></span></a>
-                    <a rel="noopener" href="https://www.linkedin.com/in/warcheranimation/" aria-label="LinkedIn" target="_blank"><span class="footer-icons"><i class="fab fa-linkedin light"></i></span></a>
-                    <div class="row footer-nav">
-                        <ul class="navbar-nav ml-auto float-right text-right pr-3">
+                <div class="flex-grid__col footer__socials">
+                    <a rel="noopener" href="https://www.instagram.com/_thepinkpanda_/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a rel="noopener" href="https://twitter.com/_thepinkpanda_" aria-label="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a rel="noopener" href="https://www.pinterest.com.au/PandaFromTheSea/" aria-label="Pinterest" target="_blank"><i class="fab fa-pinterest"></i></a>
+                    <a rel="noopener" href="https://www.behance.net/warcherani3102" aria-label="Behance" target="_blank"><i class="fab fa-behance"></i></a>
+                    <a rel="noopener" href="https://www.linkedin.com/in/warcheranimation/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <div class="footer__nav">
+                        <ul class="footer__menu">
                             {% for item in site.data.navigation %}
                             {% if item.title != 'Contact' %}
                             {% if page.url == item.url %}
-                            <li class="nav-item">
-                                <a class="nav-link animsition-link" href="{{ item.url }}">{{ item.title }}</a>
+                            <li class="footer__item">
+                                <a class="animsition-link" href="{{ item.url }}">{{ item.title }}</a>
                             </li>
                             {% else %}
-                            <li class="nav-item">
-                                <a class="nav-link animsition-link" href="{{ site.url }}{{ item.url }}">{{ item.title }}</a>
+                            <li class="footer__item">
+                                <a class="animsition-link" href="{{ site.url }}{{ item.url }}">{{ item.title }}</a>
                             </li>
                             {% endif %}
                             {% endif %}
@@ -58,13 +58,11 @@ layout: head
                 </div>
             </div>
             <hr />
-            <div class="row justify-content-center">
-                <p class="light small-font">© 2019 Portfolio of William Archer, All Rights Reserved</p>
+            <div class="footer__copyright">
+                <p>© 2019 Portfolio of William Archer, All Rights Reserved</p>
             </div>
         </div>
     </footer>
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
     <script src="{{ site.url }}/js/iso.js"></script>
