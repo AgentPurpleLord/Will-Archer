@@ -43,6 +43,10 @@ img {
     max-width: 100%;
 }
 
+.fade-in, .fade-out, .animsition-overlay-slide {
+    background-color: var(--black);
+}
+
 article, aside, footer, header, nav, section { display: block; }
 
 /* Globals */
@@ -248,49 +252,12 @@ h6, .h6 {
     font-size: 1rem;
     font-weight: 800;
 }
-.list-head{ font-weight: 700; }
-.baseline { align-items: baseline; }
-/* Body Font */
-.lh-10 { line-height: 10px;}
-.lh-15 { line-height: 15px;}
-.lh-20 { line-height: 20px;}
-.lh-25 { line-height: 25px;}
-.lh-30 { line-height: 30px;}
-.lh-35 { line-height: 35px;}
-.normal-text { text-transform: none;}
 
-.lead {
-    font-family: 'Inter', Lato, Arial, Helvetica, sans-serif, Arial, sans-serif;
-    font-size: 1.25rem;
-    font-weight: 400;
-}
 p, .p {
     font-family: 'Inter', Arial, Helvetica, Arial, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     margin: 0;
-}
-.small-font {
-    font-size: 0.833rem;
-}
-.xsmall-font {
-    font-size: 0.694rem;
-}
-.tiny-font {
-    font-size: 0.579rem;
-}
-.nav-link {
-    font-family: 'Inter', Arial, Helvetica, Arial, sans-serif;
-    font-size: 24px; 
-    font-weight: 700;
-    text-decoration: none;
-}
-.nav-item {
-    font-family: 'Inter', Arial, Helvetica, Arial, sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 0 10px !important;
 }
 
 /* Buttons */
@@ -724,10 +691,6 @@ p, .p {
     padding: 5% 0;
     background-color: var(--dark-accent);
 }
-footer a:hover, focus {
-    color: var(--light-accent);
-    transition: all 250ms ease;
-}
 .footer__form {
     padding-bottom: 1.5rem;
 }
@@ -799,6 +762,11 @@ footer a:hover, focus {
 }
 .footer__socials {
     text-align: right;
+    transition: all 350ms ease;
+}
+.footer__socials a:hover, focus, .footer__socials i:hover, focus {
+    color: var(--light-accent);
+    transition: all 350ms ease;
 }
 .footer__socials i {
     font-size: 38px;
@@ -817,6 +785,7 @@ footer a:hover, focus {
     font-weight: 700;
     text-decoration: none;
     padding: .5rem 1rem;
+    transition: all 350ms ease;
 }
 .footer__item a {
     color: var(--light-color);
