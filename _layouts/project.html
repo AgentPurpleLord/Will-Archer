@@ -1,64 +1,63 @@
 ---
 permalink: pretty
 layout: navbar
-nav-color: nbar-light
 title: {{ page.project_name }}
 description: {{ page.description }}
 ---
-    <div class="container">
-        <div class="row project-section">
-            <div class="col-xl-7 col-lg-5 order-lg-1">
-                <p class="xsmall-font text-muted pt-4 pb-3"><i class="far fa-clock"></i>&nbsp{{ page.project_date }}&nbsp&nbsp<i class="fas fa-tags"></i>&nbsp{{ page.category }}</p>
-                {% if page.video %}
-                <div class="video">
-                    <iframe class="resp-iframe" src="{{ page.video }}" frameborder="0" gesutre="media" allow="encrypted-media" allowfullscreen></iframe>
-                </div>
-                {% endif %}
-                <div class="portfolio-images pt-3">
-                    {% for image in page.gallery %}
-                    <img data-aos="fade-up" class="rounded mb-3 img-responsive" img-src="assets/function/blur.jpg" data-echo="{{ image | relative_url }}" alt="{{ image.name }}" />
-                    {% endfor %}
-                </div>
+<div class="container--lg">
+    <div class="flex-grid flex-grid--md project">
+        <div class="flex-grid__col project__gallery">
+            <p><i class="far fa-clock"></i>&nbsp{{ page.project_date }}&nbsp&nbsp<i class="fas fa-tags"></i>&nbsp{{ page.category }}</p>
+            {% if page.video %}
+            <div class="project__video">
+                <iframe src="{{ page.video }}" frameborder="0" gesutre="media" allow="encrypted-media" allowfullscreen></iframe>
             </div>
+            {% endif %}
+            <div class="project__images">
+                {% for image in page.gallery %}
+                <img data-aos="fade-up" img-src="assets/function/blur.jpg" data-echo="{{ image | relative_url }}" alt="{{ image.name }}" />
+                {% endfor %}
+            </div>
+        </div>
 
-            <div class="col-xl-5 col-lg-5 order-lg-2">
-                <div class="info-section">
-                    <h2 class="lead section-title">Client</h2>
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <span class="text-muted">Name:</span>
-                            <span class="p dark small-font">{{ page.client }}</span>
-                        </li>
-                        <li>
-                            <span class="text-muted">Services:</span>
-                            <span class="p dark small-font">{{ page.services }}</span>
-                        </li>
-                        {% if page.client_site %}
-                        <li>
-                            <span class="text-muted">Website:</span>
-                            <a href="{{ page.client_site }}" class="p dark small-font" target="_blank">{{ page.client_site }}</a>
-                        </li>
-                        {% endif %}
-                    </ul>
-                </div>
-                <div class="info-section">
-                    <h2 class="lead section-title">Description</h2>
-                    <p>
-                        {{ page.description }}
-                    </p>
-                </div>
-                <div class="info-section">
-                    <h2 class="lead section-title">Tools & Tech</h2>
-                    <p>
-                        {{ page.tools }}
-                    </p>
-                </div>
-                <div class="info-section">
-                    <h2 class="lead section-title">Roles</h2>
-                    <p>
-                        {{ page.roles }}
-                    </p>
-                </div>
+        <div class="flex-grid__col flex-grid__col--sm project__info">
+            <div>
+                <h2>Client</h2>
+                <ul>
+                    <li>
+                        <h3>Name:</h3>
+                        <p>{{ page.client }}</p>
+                    </li>
+                    <li>
+                        <h3>Services:</h3>
+                        <p>{{ page.services }}</p>
+                    </li>
+                    {% if page.client_site %}
+                    <li>
+                        <h3>Website:</h3>
+                        <a href="{{ page.client_site }}" class="p dark small-font" target="_blank">{{ page.client_site }}</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+            <div>
+                <h2>Description</h2>
+                <p>
+                    {{ page.description }}
+                </p>
+            </div>
+            <div>
+                <h2>Tools & Tech</h2>
+                <p>
+                    {{ page.tools }}
+                </p>
+            </div>
+            <div>
+                <h2>Roles</h2>
+                <p>
+                    {{ page.roles }}
+                </p>
             </div>
         </div>
     </div>
+</div>

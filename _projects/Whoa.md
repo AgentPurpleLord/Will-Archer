@@ -1,5 +1,6 @@
 ---
 layout: project
+nav-color: navbar--light
 category: Graphic
 cover_image: assets/img/pizza.png
 project_name: Holy Cow Batman

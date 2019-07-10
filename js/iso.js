@@ -6,7 +6,7 @@ jQuery(document).ready(function ($) {
         $(this).addClass("active");
 
         var selector = $(this).attr('data-filter');
-        $(".all-projects").isotope({
+        $(".gallery__projects").isotope({
             filter: selector,
             animationOptions: {
                 duration: 750,
@@ -18,12 +18,9 @@ jQuery(document).ready(function ($) {
     });
 
     // init Isotope
-    var $grid = $('.grid').isotope({
-        itemSelector: '.grid-item', // use a separate class for itemSelector, other than .col-
-        percentPosition: true,
-        masonry: {
-            columnWidth: '.grid-sizer'
-        }
+    var $grid = $('.isotope__grid').isotope({
+        itemSelector: '.gallery__item',
+        layoutMode: 'fitRows'
     });
     // layout Isotope after each image loads
     $grid.imagesLoaded().progress(function () {
