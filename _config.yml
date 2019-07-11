@@ -12,4 +12,4 @@ defaults:
       path: ""
       type: "projects"
     values:
-      nav-color: "nbar-light"
+      nav-color: "navbar--light"
