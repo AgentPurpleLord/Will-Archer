@@ -49,19 +49,19 @@ skills:
             <h1>{{ page.splash }}</h1>
         </div>
         <div class="flex-grid__col header__icon">
-            <img src="{{site.url}}/assets/brand/williamPerson.svg" alt="William Archer standing around" width="500" height="250" />
+            <img src="{{site.url}}/assets/brand/williamPerson.svg" alt="William Archer standing around" />
         </div>
     </section>
 </div>
 
-<svg style="display: block; "width="100%" height="96px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+<svg style="display: block;" width="100%" height="5%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
     <path fill="#2854EA" d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
 </svg>
 
 
-<section class="about flex-grid">
-    <div class="flex-grid__col about__icon">
-        <img src="{{site.url}}/assets/brand/artfulIcons.svg" alt="A series of art-related tools" width="500" height="300" />
+<section class="about flex-grid flex-grid--md">
+    <div class="flex-grid__col flex-grid__col--md about__icon">
+        <img src="{{site.url}}/assets/brand/artfulIcons.svg" alt="A series of art-related tools" />
     </div>
     <div class="flex-grid__col about__header">
         <h2>{{ page.about }}</h2>
@@ -86,12 +86,12 @@ skills:
 <section class="skills">
     <h3>Skills</h3>
     <div class="container--lg">
-        <div class="flex-grid flex-grid--lg">
+        <div class="flex-grid flex-grid--md">
             {% for item in page.skills %}
             {% if item.skill == 'Animation' %}
             <div class="flex-grid__col flex-grid__col--lg">
                 <div class="skills__card">
-                    <svg viewBox="0 0 160 160" width="200" height="200">
+                    <svg viewBox="0 0 160 160" width="80%" height="80%">
                         <circle cx="80" cy="80" r="50" fill="#2854EA" />
                         <g transform=" matrix(0.866, -0.5, 0.25, 0.433, 80, 80)">
                             <path d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z" fill="#F46DD6">
@@ -106,7 +106,7 @@ skills:
             {% else %}
             <div class="flex-grid__col flex-grid__col--lg">
                 <div class="skills__card">
-                    <img class="skills__icon" src="{{ item.svg }}" alt="{{ item.alt }}" width="200" height="200" />
+                    <img class="skills__icon" src="{{ item.svg }}" alt="{{ item.alt }}" />
                     <h4>{{ item.skill }}</h4>
                 </div>
             </div>
