@@ -8,8 +8,8 @@ fields:
   config:
     required: false
     options:
-    - nbar-light
-    - nbar-dark
+    - navbar--light
+    - navbar--dark
     source:
       type: simple
       section: 
