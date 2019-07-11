@@ -16,19 +16,6 @@ a {
 }
 
 /* Responsive Text */
-@media screen and (min-width: 320px) {
-    html { font-size: calc(16px + 8 * ((100vw - 320px) / 2560)); }
-}
-@media screen and (min-width: 2560px) {
-    html { font-size: 24px; }
-}
-
-@supports (font-variation-settings: normal) {
-    html {
-        font-family: 'Inter var', sans-serif;
-    }
-}
-
 html, body {
     height: 100%;
     width: 100%;
@@ -218,14 +205,32 @@ article, aside, footer, header, nav, section { display: block; }
 
 
 /* Typography */
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(10px + 8 * ((100vw - 320px) / 2560));
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    html {
+        font-size: 24px;
+    }
+}
+
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: 'Inter var', sans-serif;
+    }
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: 'Inter', Lato, Arial, Helvetica, sans-serif, Arial, sans-serif;
     text-decoration: none !important;
     margin: 0;
 }
 
 h1, .h1 {
-    font-size: 2.488rem;
+    font-size: 2.488em;
     font-weight: 900;
     letter-spacing: normal;
     text-transform: uppercase;
@@ -607,7 +612,7 @@ p, .p {
 .gallery {
     background: var(--black);
     padding: 0 10%;
-    padding-bottom: 200px;
+    padding-bottom: 10%;
 }
 
 .gallery__menu {
@@ -645,6 +650,18 @@ p, .p {
     color: var(--primary-color);
 }
 
+@media (max-width: 577px) {
+    .gallery__nav {
+        justify-content: center;
+        padding: 0;
+        text-align: center;
+    }
+
+    .gallery__link {
+        padding: 5px 10px;
+    }
+}
+
 .gallery__item figure {
     position: relative;
     margin: 0 0 1rem;
@@ -675,7 +692,6 @@ p, .p {
 
 .gallery__item h4 {
     color: var(--light-color);
-    font-size: 1rem;
     font-weight: 800;
     font-family: 'Inter', Arial, Helvetica, Arial, sans-serif;
     text-decoration: none;
@@ -686,15 +702,21 @@ p, .p {
     color: var(--primary-color);
 }
 
+@media (max-width: 577px) {
+    .gallery__item {
+        padding-bottom: 5%;
+    }
+}
+
 /* Footer */
 .footer {
-    padding: 5% 0;
     background-color: var(--dark-accent);
 }
 .footer__form {
     padding-bottom: 1.5rem;
 }
 .footer__form h3 {
+    font-size: 2rem;
     color: var(--light-color);
 }
 .footer__form p {
@@ -796,14 +818,30 @@ p, .p {
 }
 .footer__copyright p {
     color: var(--light-color);
-    font-size: 0.833rem;
-    font-family: 'Inter', Arial, Helvetica, Arial, sans-serif;
     margin: 0;
 }
 
+@media (max-width: 577px) {
+    .footer__socials {
+        padding: 5% 0;
+        text-align: center;
+    }
+    .footer__nav {
+        padding: 0;
+    }
+    .footer__menu {
+        padding-left: 0;
+    }
+    .footer__copyright p {
+        font-size: 1rem;
+    }
+}
+
 /* Project Page */
+.project__gallery h1 {
+    color: var(--dark-accent);
+}
 .project__gallery p {
-    font-size: 0.694rem;
     color: #6C757d;
     padding: 1.5rem 0;
 }
@@ -830,8 +868,6 @@ p, .p {
     padding-top: 1.5rem;
     padding-bottom: .5rem;
     margin-bottom: 1.5rem;
-    font-family: 'Inter', Lato, Arial, Helvetica, sans-serif, Arial, sans-serif;
-    font-size: 1.25rem;
     font-weight: 400;
 }
 .project__info h2:after {
@@ -852,19 +888,19 @@ p, .p {
 }
 .project__info h3 {
     display: inline;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #6C757d;
     font-weight: 400;
     text-transform: none;
 }
 .project__info p {
     display: inline;
-    font-size: 0.833rem;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 .project__info a {
     display: inline;
-    font-size: 24px;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 /* Resume Page */
@@ -878,7 +914,6 @@ p, .p {
 .header__text h1 {
     vertical-align: middle;
     text-align: center;
-    font-size: 1.728rem;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -889,8 +924,14 @@ p, .p {
     height: 100px;
     fill: var(--light-color);
 }
+.header__icon {
+    text-align: center;
+}
+.header__icon img {
+    width: 50%;
+    height: auto;
+}
 .about {
-    display: flex;
     align-items: center;
     background-color: var(--dark-accent);
     padding: 5% 12%;
@@ -900,6 +941,19 @@ p, .p {
     font-size: 1.728rem;
     font-weight: 700;
     text-transform: none;
+}
+.about__icon {
+    text-align: center;
+    padding: 10%;
+}
+.about__icon img {
+    width: 80%;
+    height: auto;
+}
+@media (max-width: 577px) {
+    .about__header h2 {
+        text-align: center;
+    }
 }
 .timeline {
     text-align: center;
@@ -935,18 +989,14 @@ p, .p {
 }
 .timeline__event h4 {
     display: inline;
-    font-size: 1.2rem;
     font-weight: 500;
 }
 .timeline__event h5 {
     display: inline;
-    font-size: 0.833rem;
     font-weight: 200;
 }
 .timeline__event p {
-    font-size: 0.833rem;
     font-weight: 400;
-
 }
 .timeline__event:last-of-type {
   padding-bottom: 0;
@@ -978,6 +1028,11 @@ p, .p {
   content: "";
   top: 5px;
 }
+@media (max-width: 577px) {
+    .timeline__event:before {
+        left: -131.5px;
+    }
+}
 .skills {
     text-align: center;
     padding: 3% 0;
@@ -989,8 +1044,9 @@ p, .p {
     padding: 20px 0px;
 }
 .skills__card {
+    height: 200px;
+    width: 100%;
     position: relative;
-    padding: 20px;
     box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
     display: flex;
     flex-direction: column;
@@ -1007,6 +1063,10 @@ p, .p {
     text-align: center;
     transition: all 0.2s ease;
     z-index: 100;
+}
+.skills__card img {
+    height: 80%;
+    width: 80%;
 }
 .skills__card:hover {
     transform: translateY(-10px) !important;
