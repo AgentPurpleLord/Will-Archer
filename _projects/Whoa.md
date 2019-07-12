@@ -2,7 +2,7 @@
 layout: project
 nav-color: navbar--light
 category: Graphic
-cover_image: assets/img/pizza
+cover_image: assets/img/pizza.png
 project_name: Holy Cow Batman
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 project_date: April 12th, 2019

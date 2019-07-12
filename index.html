@@ -42,10 +42,7 @@ hero: Why hello thar welcome To me Site
             <div class="col col--4 gallery__item {{ item.category }}">
                 <a class="animsition-link" href="{{ item.url }}">
                     <figure class="tint">
-                        <picture>
-                            <source srcset="{{ item.cover_image | relative_url }}.webp" type="image/webp" />
-                            <img data-aos="fade-up" src="{{ item.cover_image | relative_url }}.png" alt="{{ item.project_name }}" />
-                        </picture>
+                        <img data-aos="fade-up" src="{{ item.cover_image | relative_url }}" alt="{{ item.project_name }}" />
                     </figure>
                     <h4>{{ item.project_name }}</h4>
                     <p>{{ item.category }}</p>
