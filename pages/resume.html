@@ -46,9 +46,9 @@ skills:
 <div class="container--lg">
     <section class="header flex-grid">
         <div class="flex-grid__col header__text">
-            <h1>{{ page.splash }}</h1>
+            <h1 data-aos="fade-right">{{ page.splash }}</h1>
         </div>
-        <div class="flex-grid__col header__icon">
+        <div data-aos="zoom-in" class="flex-grid__col header__icon">
             <img src="{{site.url}}/assets/brand/williamPerson.svg" alt="William Archer standing around" />
         </div>
     </section>
@@ -61,20 +61,20 @@ skills:
 
 <section class="about flex-grid flex-grid--md">
     <div class="flex-grid__col flex-grid__col--md about__icon">
-        <img src="{{site.url}}/assets/brand/artfulIcons.svg" alt="A series of art-related tools" />
+        <img data-aos="zoom-in" src="{{site.url}}/assets/brand/artfulIcons.svg" alt="A series of art-related tools" />
     </div>
     <div class="flex-grid__col about__header">
-        <h2>{{ page.about }}</h2>
+        <h2 data-aos="fade-left">{{ page.about }}</h2>
     </div>
 </section>
 
 <section class="timeline">
-    <h3>My Past</h3>
+    <h3 data-aos="fade">My Past</h3>
     {% assign sorted = page.timeline | sort: 'date' | reverse %}
 
     <ul class="timeline__list">
         {% for item in sorted %}
-        <li class="timeline__event" data-date="{{ item.date }}">
+        <li data-aos="fade-up" class="timeline__event" data-date="{{ item.date }}">
                 <h4>{{ item.title }}</h4>
                 <h5> at {{item.place }}</h5>
                 <p>{{ item.body }}</p>
@@ -84,13 +84,13 @@ skills:
 </section>
 
 <section class="skills">
-    <h3>Skills</h3>
+    <h3 data-aos="fade">Skills</h3>
     <div class="container--lg">
         <div class="flex-grid flex-grid--md">
             {% for item in page.skills %}
             {% if item.skill == 'Animation' %}
             <div class="flex-grid__col flex-grid__col--lg">
-                <div class="skills__card">
+                <div data-aos="fade-up" class="skills__card">
                     <svg viewBox="0 0 160 160" width="80%" height="80%">
                         <circle cx="80" cy="80" r="50" fill="#2854EA" />
                         <g transform=" matrix(0.866, -0.5, 0.25, 0.433, 80, 80)">
@@ -105,7 +105,7 @@ skills:
             </div>
             {% else %}
             <div class="flex-grid__col flex-grid__col--lg">
-                <div class="skills__card">
+                <div data-aos="fade-up" class="skills__card">
                     <img class="skills__icon" src="{{ item.svg }}" alt="{{ item.alt }}" />
                     <h4>{{ item.skill }}</h4>
                 </div>

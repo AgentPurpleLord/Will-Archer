@@ -11,7 +11,7 @@ services: Graphic Design
 client_site: www.ThatOneCompany.com
 tools: Adobe Illustrator
 roles: Designer
-video: https://www.youtube.com/watch?v=D9kMcloM-TM
+video: https://www.youtube.com/embed/watch?v=D9kMcloM-TM
 gallery:
 - assets/img/book.png
 - assets/img/desert.png

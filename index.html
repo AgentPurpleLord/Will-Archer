@@ -39,10 +39,10 @@ hero: Why hello thar welcome To me Site
     <div class="container--lg">
         <div class="row isotope__grid gallery__projects">
             {% for item in site.projects %}
-            <div class="col col--4 gallery__item {{ item.category }}">
+            <div data-aos="fade-up" class="col col--4 gallery__item {{ item.category }}">
                 <a class="animsition-link" href="{{ item.url }}">
                     <figure class="tint">
-                        <img data-aos="fade-up" src="{{ item.cover_image | relative_url }}" alt="{{ item.project_name }}" />
+                        <img class="lazy" data-echo="{{ item.cover_image | relative_url }}" alt="{{ item.project_name }}" />
                     </figure>
                     <h4>{{ item.project_name }}</h4>
                     <p>{{ item.category }}</p>
