@@ -1,7 +1,7 @@
 ---
 layout: project
 nav-color: navbar--light
-category: Graphic
+category: Motion
 cover_image: assets/img/pizza_cover.png
 project_name: Showreel 2019
 description: Check out my snazzy showreel. I did all of the animation on display and a little bit of the asset creation.
