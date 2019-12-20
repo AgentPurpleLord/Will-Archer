@@ -66,6 +66,15 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
     <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+    <script>
+        function scrollSmoothTo(elementId) {
+            var element = document.getElementById(elementId);
+            element.scrollIntoView({
+                block: 'start',
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </head>
 {{ content }}
 </html>
