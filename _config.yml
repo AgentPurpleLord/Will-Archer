@@ -5,12 +5,21 @@ collections:
   projects:
     output: true
     permalink: :title/
+  posts:
+    output: true
+    permalink: :title/
 
 defaults:
   -
     scope:
       path: ""
       type: "projects"
+    values:
+      nav-color: "navbar--light"
+  -
+    scope:
+      path: ""
+      type: "posts"
     values:
       nav-color: "navbar--light"
 

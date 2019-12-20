@@ -1,0 +1,40 @@
+---
+layout: navbar
+nav-color: navbar--light
+title: Blog
+description: William Archer | Independent Graphic Designer. Check out my blog which goes over some of my projects in depth.
+---
+<body class="{{ page.title}}">
+    <div class="blog__header">
+        <h1>Blog</h1>
+    </div>
+    <svg style="display: block;" width="100%" height="5%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+        <path fill="#EFF3F3" d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
+    </svg>
+    <div class="blog__background">
+        <div class="container--lg">
+            <div class="row">
+                {% for item in site.posts %}
+                <a href="{{ item.url }}">
+                    <div class="blog__post col col--6">
+                        <figure class="tint">
+                            <img data-echo="{{ item.cover_image | relative_url }}" alt="{{ item.project_name }}" />
+                        </figure>
+                        <p class="blog__category">{{ item.category }}</p>
+                        <p class="blog__date">{{ item.date | date: '%B %d, %Y' }}</p>
+                        <h2>{{ item.title }}</h2>
+                        <p class="blog__excerpt">{{ item.excerpt | strip_html | truncatewords: 25 }}</p>
+                        {% for item in item.tags %}
+                        <span class="btn blog__tags blog__tags--{{ item | replace: " ", "-" | downcase }}">{{ item }}</span>
+                        {% endfor %}
+                    </div>
+                </a>
+                {% endfor %}
+                {% assign psize = site.posts | size %}
+                {% if psize == 0 %}
+                <h1 class="empty__title">Sorry, I haven't made a post yet!</h1>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</body>

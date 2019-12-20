@@ -1,6 +1,7 @@
 ---
 permalink: pretty
 layout: navbar
+nav-color: navbar--light
 title: {{ page.project_name }}
 description: {{ page.description }}
 ---
@@ -11,7 +12,7 @@ description: {{ page.description }}
             <p><i class="far fa-clock"></i>&nbsp{{ page.project_date }}&nbsp&nbsp<i class="fas fa-tags"></i>&nbsp{{ page.category }}</p>
             {% if page.video %}
             <div class="project__video">
-                <iframe src="{{ page.video }}" frameborder="0" gesutre="media" allow="encrypted-media" allowfullscreen></iframe>
+                <iframe width="560" height="315" frameborder="0" src="{{ page.video }}" gesutre="media"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             {% endif %}
             <div class="project__images">

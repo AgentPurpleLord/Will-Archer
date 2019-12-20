@@ -1,0 +1,49 @@
+﻿---
+permalink: pretty
+layout: navbar
+title: {{ page.title }}
+description: {{ page.description }}
+---
+<div class="post__header container">
+    <nav id="breadcrumb__container" aria-label="breadcrumbs">
+        <div id="breadcrumbs">
+            {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+            <a href="/blog">Blog</a>
+            {% for crumb in crumbs offset: 1 %}
+            {% if forloop.last %}
+            &nbsp;⯈ {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
+            {% else %}
+            &nbsp;⯈ <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' | replace:'without-plugin/','without-plugins/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </nav>
+    <h1>{{ page.title }}</h1>
+    <div class="post__information flex-grid">
+        <div class="flex-grid__col post__avatar">
+            <img src="{{ site.baseurl}}/assets/brand/will-avatar.png" />
+            <svg class="half-circle" width="80px" height="80px">
+                <use xlink:href="#half-circle">
+                <svg id="half-circle" viewBox="0 0 106 57"><path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path></svg>
+                </use>
+            </svg>
+        </div>
+        <div class="flex-grid__col post__author">
+            <div class="post__information--subtitle">Author</div>
+            <div>William Archer</div>
+        </div>
+        <div class="flex-grid__col post__date">
+            <div class="post__information--subtitle">Published Date</div>
+            <div>{{ page.date | date: '%B %d, %Y' }}</div>
+        </div>
+    </div>
+    <div class="tag__container">
+    {% for item in page.tags %}
+    <span class="btn blog__tags blog__tags--{{ item | replace: " ", "-" | downcase }}">{{ item }}</span>
+    {% endfor %}
+    </div>
+</div>
+<div class="container blog__content">
+    {{content}}
+</div>
+
