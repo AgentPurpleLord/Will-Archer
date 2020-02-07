@@ -1,5 +1,5 @@
 ---
-category: motion
+category: Motion
 cover_image: assets/img/02/Rezzies_01.png
 project_name: Rezies - Teaser Trailer
 description: "<p>Working with the people at Dirty Puppet I was brought on to work
@@ -19,5 +19,7 @@ gallery:
 - assets/img/02/Rezzies_06.png
 - assets/img/02/Rezzies_07.png
 - assets/img/02/Rezzies_08.png
+layout: projects
+nav-color: navbar--light
 
 ---

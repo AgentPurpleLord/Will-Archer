@@ -1,5 +1,5 @@
 ---
-category: motion
+category: Motion
 cover_image: assets/img/02/Head_Banner.png
 project_name: The Faces of Polynaut
 description: "<p>An animation exercise to get myself comfortable using the Joysticks
@@ -15,5 +15,7 @@ gallery:
 - assets/img/02/MASTER_Nathan_Profile.gif
 - assets/img/02/MASTER_Connor_Web.gif
 - assets/img/02/MASTER_Will_Web_v02.gif
+layout: projects
+nav-color: navbar--light
 
 ---
