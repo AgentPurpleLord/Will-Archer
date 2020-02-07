@@ -1,6 +1,6 @@
 ---
 category: motion
-cover_image: assets/img/02/GG_01.png
+cover_image: assets/img/02/GG_02.png
 project_name: Grossery Gang
 description: "<p>In my time at Dirty Puppet I would start off as a character animator
   for the web series; Grossery Gang. Working on this I would find myself working from
