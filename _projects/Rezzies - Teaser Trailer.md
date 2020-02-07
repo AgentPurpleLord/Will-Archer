@@ -19,7 +19,7 @@ gallery:
 - assets/img/02/Rezzies_06.png
 - assets/img/02/Rezzies_07.png
 - assets/img/02/Rezzies_08.png
-layout: projects
+layout: project
 nav-color: navbar--light
 
 ---

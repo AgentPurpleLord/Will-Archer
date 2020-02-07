@@ -25,7 +25,7 @@ gallery:
 - assets/img/02/Mermay_Day6.png
 - assets/img/02/Mermay_Day3.png
 - assets/img/02/Mermay_Day2.png
-layout: projects
+layout: project
 nav-color: navbar--light
 
 ---
