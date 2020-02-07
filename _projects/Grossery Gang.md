@@ -21,7 +21,7 @@ gallery:
 - assets/img/02/Dino poots.mp4
 - assets/img/02/PF_Anim_04.gif
 - assets/img/02/PF_Anim_01.gif
-layout: projects
+layout: project
 nav-color: navbar--light
 
 ---
