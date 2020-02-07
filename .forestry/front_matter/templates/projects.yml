@@ -5,12 +5,13 @@ fields:
 - name: layout
   type: text
   config:
-    required: false
+    required: true
   label: layout
   default: project
   showOnly:
     value: motion
   hidden: false
+  description: Should be 'project'
 - name: nav-color
   type: text
   config:
@@ -18,6 +19,7 @@ fields:
   label: nav-color
   default: navbar--light
   hidden: false
+  description: Should be 'navbar--light'
 - name: category
   type: select
   default: motion
