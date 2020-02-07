@@ -12,7 +12,7 @@ client_site: https://dirtypuppet.com/
 services: Animation, Asset Creation, Rigging, Compositing
 tools: After Effects, Photoshop, Illustrator
 roles: 'Character Animation, Asset Creation, Rigger, Compositor '
-video: https://www.youtube.com/watch?v=D9kMcloM-TM
+video: https://www.youtube.com/embed/D9kMcloM-TM
 gallery:
 - assets/img/02/Rezzies_02.png
 - assets/img/02/Rezzies_04.png
