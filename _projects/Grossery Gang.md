@@ -2,7 +2,9 @@
 category: motion
 cover_image: assets/img/02/GG_01.png
 project_name: Grossery Gang
-description: ''
+description: "<p>In my time at Dirty Puppet I would start off as a character animator
+  for the web series; Grossery Gang. Working on this I would find myself working from
+  an animatic to bring the colourful characters of Cheap Town to life!</p>"
 project_date: July 2018
 client: Dirty Puppet
 client_site: https://dirtypuppet.com/
@@ -19,6 +21,5 @@ gallery:
 - assets/img/02/Dino poots.mp4
 - assets/img/02/PF_Anim_04.gif
 - assets/img/02/PF_Anim_01.gif
-published: false
 
 ---
