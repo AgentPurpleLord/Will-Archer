@@ -76,4 +76,5 @@ fields:
   description: You can upload photos through this to appear in the gallery and order
     them in here. Keep them optimized!
 pages:
+- _projects/Life On Paws.md
 - _projects/The Heads of Polynaut.md
