@@ -11,7 +11,7 @@ client_site: https://dirtypuppet.com/
 services: Animation, Compositing
 tools: After Effects, Photoshop, Illustrator
 roles: Character Animator, Compositor
-video: https://www.youtube.com/watch?v=W02PUeQ6rp8
+video: https://www.youtube.com/embed/W02PUeQ6rp8
 gallery:
 - assets/img/02/PF_FastRun.gif
 - assets/img/02/So many PF.mp4
