@@ -2,6 +2,22 @@
 label: Projects
 hide_body: true
 fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: layout
+  default: project
+  showOnly:
+    value: motion
+  hidden: true
+- name: nav-color
+  type: text
+  config:
+    required: false
+  label: nav-color
+  default: navbar--light
+  hidden: true
 - name: category
   type: select
   default: motion
