@@ -20,11 +20,10 @@ roles: 'Social Media Management, Illustration '
 video: ''
 gallery:
 - assets/img/02/Mermay_Day7.png
-- assets/img/02/Mermay_Day6.png
 - assets/img/02/Mermay_Day5.png
 - assets/img/02/Mermay_Day4.png
+- assets/img/02/Mermay_Day6.png
 - assets/img/02/Mermay_Day3.png
 - assets/img/02/Mermay_Day2.png
-published: false
 
 ---
