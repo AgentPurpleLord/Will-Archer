@@ -75,3 +75,5 @@ fields:
   label: Gallery
   description: You can upload photos through this to appear in the gallery and order
     them in here. Keep them optimized!
+pages:
+- _projects/The Heads of Polynaut.md
