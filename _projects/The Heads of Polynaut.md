@@ -15,5 +15,6 @@ gallery:
 - assets/img/02/MASTER_Nathan_Profile.gif
 - assets/img/02/MASTER_Connor_Web.gif
 - assets/img/02/MASTER_Will_Web_v02.gif
+published: false
 
 ---
