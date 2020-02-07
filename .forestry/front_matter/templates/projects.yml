@@ -10,23 +10,23 @@ fields:
   default: project
   showOnly:
     value: motion
-  hidden: true
+  hidden: false
 - name: nav-color
   type: text
   config:
     required: false
   label: nav-color
   default: navbar--light
-  hidden: true
+  hidden: false
 - name: category
   type: select
   default: motion
   config:
     required: true
     options:
-    - motion
-    - graphic
-    - illustration
+    - Motion
+    - Graphic
+    - Illustration
     source:
       type: simple
       section: 
