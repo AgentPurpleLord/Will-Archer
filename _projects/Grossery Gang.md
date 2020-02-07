@@ -1,5 +1,5 @@
 ---
-category: motion
+category: Motion
 cover_image: assets/img/02/GG_02.png
 project_name: Grossery Gang
 description: "<p>In my time at Dirty Puppet I would start off as a character animator
@@ -21,5 +21,7 @@ gallery:
 - assets/img/02/Dino poots.mp4
 - assets/img/02/PF_Anim_04.gif
 - assets/img/02/PF_Anim_01.gif
+layout: projects
+nav-color: navbar--light
 
 ---

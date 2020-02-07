@@ -1,5 +1,5 @@
 ---
-category: illustration
+category: Motion
 cover_image: assets/img/02/Mermay_Banner.png
 project_name: Mermay 2018
 description: "<p>Wanting to get better with my Illustration skills I set out to challenge
@@ -25,5 +25,7 @@ gallery:
 - assets/img/02/Mermay_Day6.png
 - assets/img/02/Mermay_Day3.png
 - assets/img/02/Mermay_Day2.png
+layout: projects
+nav-color: navbar--light
 
 ---
