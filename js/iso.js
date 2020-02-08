@@ -20,7 +20,10 @@ jQuery(document).ready(function ($) {
     // init Isotope
     var $grid = $('.isotope__grid').isotope({
         itemSelector: '.gallery__item',
-        layoutMode: 'fitRows'
+        percentPosition: true,
+        masonry: {
+            columnWidth: '.col'
+        }
     });
     // layout Isotope after each image loads
     $grid.imagesLoaded().progress(function () {

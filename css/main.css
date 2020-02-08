@@ -808,6 +808,14 @@ p, .p {
     }
 }
 
+.grid-sizer {
+    width: 33.33%;
+}
+
+.gallery__item {
+    width: 30%;
+}
+
 .gallery__item figure {
     position: relative;
     margin: 0 0 1rem;
