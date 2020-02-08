@@ -10,7 +10,7 @@ description: {{ page.description }}
         <div class="flex-grid__col project__gallery">
             <h1>{{ page.project_name }}</h1>
             <p><i class="far fa-clock"></i>&nbsp{{ page.project_date }}&nbsp&nbsp<i class="fas fa-tags"></i>&nbsp{{ page.category }}</p>
-            {% if page.video %}
+            {% if page.video != '' %}
             <div class="project__video">
                 <iframe width="560" height="315" frameborder="0" src="{{ page.video }}" gesutre="media"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
