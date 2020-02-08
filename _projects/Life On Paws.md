@@ -1,5 +1,5 @@
 ---
-category: motion
+category: Motion
 cover_image: assets/img/02/LOP_Thumbnail_Small.png
 project_name: Life on Paws
 description: "<p>Life on Paws was my graduate piece I worked on with 3 other classmates.
@@ -18,5 +18,7 @@ gallery:
 - assets/img/02/vlcsnap-2020-02-07-12h13m45s105.png
 - assets/img/02/vlcsnap-2020-02-07-12h13m53s376.png
 - assets/img/02/vlcsnap-2020-02-07-12h14m21s239.png
+layout: project
+nav-color: navbar--light
 
 ---
