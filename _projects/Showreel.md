@@ -2,7 +2,7 @@
 layout: project
 nav-color: navbar--light
 category: Motion
-cover_image: assets/Showreel_Icon-1.png
+cover_image: assets/img/02/Showreel_Icon-1.png
 project_name: Showreel 2019
 description: Check out my snazzy showreel. I did all of the animation on display and
   a little bit of the asset creation.
