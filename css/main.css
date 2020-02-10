@@ -816,6 +816,12 @@ p, .p {
     width: 30%;
 }
 
+@media (max-width: 430  px) {
+    .gallery__item {
+        width: 100%;
+    }
+}
+
 .gallery__item figure {
     position: relative;
     margin: 0 0 1rem;
