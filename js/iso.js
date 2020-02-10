@@ -21,8 +21,9 @@ jQuery(document).ready(function ($) {
     var $grid = $('.isotope__grid').isotope({
         itemSelector: '.gallery__item',
         percentPosition: true,
-        masonry: {
-            columnWidth: '.col'
+        layoutMode: 'fitRows',
+        fitRows: {
+            gutter: 20
         }
     });
     // layout Isotope after each image loads
