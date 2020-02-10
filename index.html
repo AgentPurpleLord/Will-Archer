@@ -2,9 +2,12 @@
 layout: navbar
 nav-color: navbar--light
 title: Home
-description: William Archer | Independent Graphic Designer. I am a multi-discplinary production designer, driven by artistic passion grounded in industry experience. Come in and check out some of my work!
+description: William Archer | Independent Animator, Illustrator and Graphic Designer.
+  I am a multi-disciplinary production designer, driven by artistic passion grounded
+  in industry experience. Come in and check out some of my work!
 hero: William Archer
 hero_subhead: Graphic Designer
+
 ---
 <section class="hero">
     <h1 class="hero__header">{{ page.hero }}</h1>
@@ -38,9 +41,8 @@ hero_subhead: Graphic Designer
     </div>
     <div class="container--lg">
         <div class="row isotope__grid gallery__projects">
-            <div class="grid-sizer col--4"></div>
             {% for item in site.projects %}
-            <div data-aos="fade-up" class="col gallery__item {{ item.category }}">
+            <div data-aos="fade-up" class="col col--4 gallery__item {{ item.category }}">
                 <a class="animsition-link" href="{{ item.url }}">
                     <figure>
                         <img data-echo="{{ item.cover_image | relative_url }}" alt="{{ item.project_name }}" />
