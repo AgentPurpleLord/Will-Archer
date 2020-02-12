@@ -20,6 +20,6 @@ gallery:
 - assets/img/02/BassPizza.webp
 - assets/img/02/CoolDude.webp
 - assets/img/02/CoolDudeBTS.webp
-- assets/img/02/Recharging_03.png
+- assets/img/02/Falling Skulls.webp
 
 ---
