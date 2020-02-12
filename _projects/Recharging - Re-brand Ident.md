@@ -2,7 +2,7 @@
 layout: project
 nav-color: navbar--light
 category: Motion
-cover_image: assets/img/02/Banner.jpg
+cover_image: assets/img/02/Banner_02.jpg
 project_name: Recharging Ident
 description: "<p>To differentiate myself from my peers in the world of freelancing
   I set out to re-brand myself. Giving myself a more professional look by sticking
