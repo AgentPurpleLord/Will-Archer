@@ -17,8 +17,8 @@ roles: Animation, 3D Modeller, Character Design, Compositing, Texturing, Concept
   Technical Director
 video: https://player.vimeo.com/video/390889314
 gallery:
+- assets/img/02/BassPizza.webp
 - assets/img/02/CoolDudeBTS.webp
-- assets/img/02/Recharging_01.png
 - assets/img/02/Recharging_02-1.png
 - assets/img/02/Recharging_03.png
 
