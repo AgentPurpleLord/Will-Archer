@@ -15,7 +15,7 @@ services: Animation, Design, 3D modelling, compositing
 tools: After Effects, Maya, Illustrator, Photoshop, Joysticks n' Sliders
 roles: Animation, 3D Modeller, Character Design, Compositing, Texturing, Concept Artist,
   Technical Director
-video: ''
+video: https://vimeo.com/390889314
 gallery:
 - assets/img/02/Recharging_02-1.png
 - assets/img/02/CoolDudeBTS.webm
