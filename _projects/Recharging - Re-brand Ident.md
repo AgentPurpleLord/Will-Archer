@@ -13,8 +13,8 @@ client: Myself!
 client_site: http://willarchercreative.com/
 services: Animation, Design, 3D modelling, compositing
 tools: After Effects, Maya, Illustrator, Photoshop, Joysticks n' Sliders
-roles: Animation, 3D Modeller, Character Design, Compositing, Texturing, Concept Artist,
-  Technical Director
+roles: Animator, Illustrator, 3D Modeller, Character Design, Compositing, Texturing,
+  Concept Artist, Technical Director
 video: https://player.vimeo.com/video/390889314
 gallery:
 - assets/img/02/BassPizza.webp
