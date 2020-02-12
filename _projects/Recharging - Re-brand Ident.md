@@ -17,8 +17,8 @@ roles: Animation, 3D Modeller, Character Design, Compositing, Texturing, Concept
   Technical Director
 video: ''
 gallery:
-- assets/img/02/CoolDudeBTS.webm
 - assets/img/02/Recharging_02-1.png
+- assets/img/02/CoolDudeBTS.webm
 - assets/img/02/Recharging_03.png
 - assets/img/02/Recharging_01.png
 published: false
