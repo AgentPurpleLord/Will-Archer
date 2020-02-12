@@ -21,6 +21,5 @@ gallery:
 - assets/img/02/CoolDudeBTS.webm
 - assets/img/02/Recharging_03.png
 - assets/img/02/Recharging_01.png
-published: false
 
 ---
