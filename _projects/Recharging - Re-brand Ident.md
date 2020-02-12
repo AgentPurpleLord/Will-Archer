@@ -2,7 +2,7 @@
 layout: project
 nav-color: navbar--light
 category: Motion
-cover_image: assets/img/02/Recharging_Banner.png
+cover_image: assets/img/02/Banner.jpg
 project_name: Recharging Ident
 description: "<p>To differentiate myself from my peers in the world of freelancing
   I set out to re-brand myself. Giving myself a more professional look by sticking
@@ -17,8 +17,8 @@ roles: Animation, 3D Modeller, Character Design, Compositing, Texturing, Concept
   Technical Director
 video: https://player.vimeo.com/video/390889314
 gallery:
+- assets/img/02/CoolDudeBTS-1.webm
 - assets/img/02/Recharging_02-1.png
-- assets/img/02/CoolDudeBTS.webm
 - assets/img/02/Recharging_03.png
 - assets/img/02/Recharging_01.png
 
