@@ -30,5 +30,11 @@ fields:
   name: hero
   label: Hero
   description: This is the splash text on the main page.
+- name: hero_subhead
+  type: text
+  config:
+    required: true
+  label: Hero Subhead
+  description: This is the cool yellow part.
 pages:
 - index.html
