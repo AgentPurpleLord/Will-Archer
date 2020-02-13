@@ -6,7 +6,7 @@ description: William Archer | Independent Animator, Illustrator and Graphic Desi
   I am a multi-disciplinary production designer, driven by artistic passion grounded
   in industry experience. Come in and check out some of my work!
 hero: William Archer
-hero_subhead: Graphic Designer
+hero_subhead: Designer
 
 ---
 <section class="hero">
@@ -42,7 +42,7 @@ hero_subhead: Graphic Designer
     <div class="container--lg">
         <div class="row isotope__grid gallery__projects">
             {% for item in site.projects %}
-            <div data-aos="fade-up" class="gallery__item {{ item.category }}">
+            <div data-aos="fade-up" class="col col--4 gallery__item {{ item.category }}">
                 <a class="animsition-link" href="{{ item.url }}">
                     <figure>
                         <img data-echo="{{ item.cover_image | relative_url }}" alt="{{ item.project_name }}" />
