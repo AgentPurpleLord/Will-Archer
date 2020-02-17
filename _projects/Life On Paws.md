@@ -12,7 +12,7 @@ services: Animation, 3D Modelling, Rigging, Character Design
 tools: After Effects, Maya, Photoshop, Illustrator
 roles: Animation, 3D Rigging, Character Design, Compositing, Texturing, Concept Artist,
   Writer, Technical Director
-video: https://vimeo.com/389870598
+video: https://player.vimeo.com/video/389870598
 gallery:
 - assets/img/02/vlcsnap-2020-02-07-12h25m23s583.png
 - assets/img/02/vlcsnap-2020-02-07-12h13m45s105.png
