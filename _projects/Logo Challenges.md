@@ -2,7 +2,7 @@
 layout: project
 nav-color: navbar--light
 category: Graphic
-cover_image: ''
+cover_image: assets/img/02/Logo_Challenge_Banner.jpg
 project_name: Logo Challenges
 description: "<p>A couple of light logo exercises to help improve my design skills
   and further my knowledge. I take every logo I work on from initial sketches to a
@@ -23,6 +23,5 @@ gallery:
 - assets/img/02/GRIND_WIP2.jpg
 - assets/img/02/Space.jpg
 - assets/img/02/Space_Anim.webp
-published: false
 
 ---
