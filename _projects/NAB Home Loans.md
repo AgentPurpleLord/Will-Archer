@@ -2,7 +2,7 @@
 layout: project
 nav-color: navbar--light
 category: Graphic
-cover_image: assets/img/03/NAB Banner.png
+cover_image: assets/img/03/NAB Banner-1.png
 project_name: NAB Home Loans
 description: "<p>I was tasked with creating the animation for these bank loan screens
   to be shown in the windows of NAB banks. <br>All assets were provided by Clemenger
