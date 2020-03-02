@@ -10,7 +10,7 @@ description: "<p>I was tasked with creating the animation for these bank loan sc
 project_date: "2017"
 client: 'Clemenger BBDO '
 client_site: https://www.clemenger.com.au/
-services: Animation, Layout Design
+services: Animation, Layout Design, Motion Design, Designer
 tools: After Effects, Photoshop, Illustrator
 roles: Designer, Animator, Layout Designer, Editor, Motion Designer
 video: https://player.vimeo.com/video/229783962
