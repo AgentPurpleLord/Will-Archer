@@ -1,7 +1,7 @@
 ---
 layout: project
 nav-color: navbar--light
-category: Motion
+category: Graphic
 cover_image: assets/img/03/MPAV_Banner.jpg
 project_name: MPavilion Launch Program
 description: "<p>Teaming up with the folks at TAKT Studio, I was put in charge of
