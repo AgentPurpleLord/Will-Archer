@@ -15,7 +15,11 @@ tools: After Effects, Photoshop, Illustrator
 roles: Designer, Animator, Layout Designer, Editor
 video: https://player.vimeo.com/video/229783962
 gallery:
+- assets/img/03/NAB_04.png
 - assets/img/03/ezgif-3-66a221f98a17.webp
+- assets/img/03/NAB_02.png
+- assets/img/03/NAB_03.png
+- assets/img/03/NAB_01.png
 published: false
 
 ---
