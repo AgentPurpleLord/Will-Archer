@@ -4,7 +4,9 @@ nav-color: navbar--light
 category: Motion
 cover_image: assets/img/03/MPAV_Banner.jpg
 project_name: MPavilion Launch Program
-description: ''
+description: "<p>Teaming up with the folks at TAKT Studio, I was put in charge of
+  putting together short advertisements for MPavilion to post on their social media
+  pages. Informing people of the upcoming events they had planned for the local community.</p>"
 project_date: October 2019
 client: TAKT Studio
 client_site: https://taktstudio.com/
@@ -19,6 +21,5 @@ gallery:
 - assets/img/03/MPAV_04.png
 - assets/img/03/MPAV_03.png
 - assets/img/03/MPAV_LogoAnim.webp
-published: false
 
 ---
