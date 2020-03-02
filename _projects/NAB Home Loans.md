@@ -12,7 +12,7 @@ client: 'Clemenger BBDO '
 client_site: https://www.clemenger.com.au/
 services: Animation, Layout Design
 tools: After Effects, Photoshop, Illustrator
-roles: Designer, Animator, Layout Designer, Editor
+roles: Designer, Animator, Layout Designer, Editor, Motion Designer
 video: https://player.vimeo.com/video/229783962
 gallery:
 - assets/img/03/NAB_04.png
