@@ -3,7 +3,7 @@ layout: project
 nav-color: navbar--light
 category: Motion
 cover_image: assets/img/02/Showreel_Icon-1.png
-project_name: Showreel 2019
+project_name: Showreel 2020
 description: Check it out! My new showreel is ready for you all to see! I worked on
   all the animation you see here along with some of the asset creation.
 project_date: December 2019
