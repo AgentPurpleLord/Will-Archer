@@ -4,15 +4,15 @@ nav-color: navbar--light
 category: Motion
 cover_image: assets/img/02/Showreel_Icon-1.png
 project_name: Showreel 2019
-description: Check out my snazzy showreel. I did all of the animation on display and
-  a little bit of the asset creation.
+description: Check it out! My new showreel is ready for you all to see! I worked on
+  all the animation you see here along with some of the asset creation.
 project_date: December 2019
 client: Myself!
-services: Graphic Design
+services: Graphic Design, Motion Graphics, Animation
 client_site: willarchercreative.com
 tools: Adobe Illustrator, AfterEffects and Photoshop
 roles: Animation
-video: https://player.vimeo.com/video/380674235
+video: https://player.vimeo.com/video/429122475
 gallery: 
 
 ---
