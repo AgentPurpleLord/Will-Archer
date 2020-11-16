@@ -15,11 +15,11 @@ tools: After Effects, Maya, Photoshop, Illustrator
 roles: Animation, 3D Animation, 3D Rigging, Storyboarding, Composting, Writing
 video: https://player.vimeo.com/video/466889752
 gallery:
-- assets/img/11/respawn_01.png
-- assets/img/11/respawn_02.webp
 - assets/img/11/respawn_03.png
-- assets/img/11/respawn_04.webp
+- assets/img/11/respawn_02.webp
 - assets/img/11/respawn_05.png
+- assets/img/11/respawn_04.webp
 - assets/img/11/respawn_06.png
+- assets/img/11/respawn_01.png
 
 ---
