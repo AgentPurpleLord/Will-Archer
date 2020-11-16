@@ -94,6 +94,7 @@ fields:
   description: You can upload photos through this to appear in the gallery and order
     them in here. Keep them optimized!
 pages:
+- _projects/Care Super.md
 - _projects/Grossery Gang.md
 - _projects/Growing Up in Australia 2017 Report.md
 - _projects/Life On Paws.md
