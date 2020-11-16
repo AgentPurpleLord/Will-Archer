@@ -1,5 +1,5 @@
 ---
-layout: Care Super
+layout: Project
 nav-color: navbar--light
 category: Motion
 cover_image: assets/img/11/caresuper_cover.png
